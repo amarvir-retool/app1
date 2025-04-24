@@ -1,0 +1,100 @@
+id: sendSlackMessage
+type: datasource
+subtype: OpenAPIQuery
+resourceName: 93a5a318-4d69-493a-abb6-5d6e8dd37034
+resourceDisplayName: 'Amarvir Retool Slack '
+template:
+  queryRefreshTime: ''
+  requestBodyMetadata: ''
+  method: post
+  allowedGroupIds: []
+  streamResponse: false
+  operationId: chat_postMessage
+  lastReceivedFromResourceAt: null
+  isFunction: false
+  functionParameters: null
+  queryDisabledMessage: ''
+  servedFromCache: false
+  server: ''
+  offlineUserQueryInputs: ''
+  functionDescription: null
+  successMessage: ''
+  queryDisabled: ''
+  path: /chat.postMessage
+  playgroundQuerySaveId: latest
+  workflowParams: null
+  resourceNameOverride: ''
+  runWhenModelUpdates: false
+  autoPaginate: false
+  workflowRunExecutionType: sync
+  showFailureToaster: true
+  query: ''
+  playgroundQueryUuid: ''
+  playgroundQueryId: null
+  error: null
+  workflowRunBodyType: raw
+  privateParams: []
+  queryRunOnSelectorUpdate: false
+  runWhenPageLoadsDelay: ''
+  parameters: '{"channel":"amarvir-demo-slack","text":"{{ startTrigger.data.text}}"}'
+  data: null
+  specPathOverride: ''
+  importedQueryInputs: {}
+  isImported: false
+  showSuccessToaster: true
+  cacheKeyTtl: ''
+  requestSentTimestamp: null
+  metadata: null
+  requestBodyDynamicStates: ''
+  queryRunTime: null
+  changesetObject: ''
+  requestBody: ''
+  offlineOptimisticResponse: null
+  errorTransformer: return data.error
+  specBasePath: ''
+  finished: null
+  confirmationMessage: null
+  isFetching: false
+  changeset: ''
+  rawData: null
+  queryTriggerDelay: '0'
+  resourceTypeOverride: null
+  watchedParams: []
+  serverVariables: ''
+  enableErrorTransformer: false
+  autoPaginateLimit: 500
+  showLatestVersionUpdatedWarning: false
+  timestamp: 0
+  evalType: script
+  importedQueryDefaults: {}
+  enableTransformer: false
+  showUpdateSetValueDynamicallyToggle: true
+  parameterDynamicStates: >-
+    {"attachments":false,"blocks":false,"channel":true,"icon_emoji":false,"icon_url":false,"link_names":false,"mrkdwn":false,"parse":false,"reply_broadcast":false,"text":false,"thread_ts":false,"unfurl_links":false,"unfurl_media":false,"username":false}
+  parameterMetadata: '{}'
+  overrideOrgCacheForUserCache: false
+  runWhenPageLoads: false
+  transformer: return data
+  events: []
+  queryTimeout: '10000'
+  workflowId: null
+  requireConfirmation: false
+  queryFailureConditions: ''
+  changesetIsObject: false
+  enableCaching: false
+  allowedGroups: []
+  offlineQueryType: None
+  queryThrottleTime: '750'
+  updateSetValueDynamically: false
+  notificationDuration: ''
+createdAt: 2025-04-23T15:18:29.972Z
+blockData:
+  top: 48
+  left: 560
+  uuid: 3013e644-7ea1-4f81-8fc6-48971728598a
+  pluginId: sendSlackMessage
+  blockType: default
+  editorType: OpenAPIQuery
+  resourceName: 93a5a318-4d69-493a-abb6-5d6e8dd37034
+  incomingOnSuccessEdges:
+    - ea1a707d-200f-46d7-b8ef-f3d1c3a99d3e

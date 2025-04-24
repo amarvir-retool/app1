@@ -1,0 +1,30 @@
+{
+  "toolscriptVersion": "1.0.0",
+  "version": "43.0.9",
+  "pageUuid": "2fdd490e-2020-11f0-b602-fb174e43ae3e",
+  "appTemplate": {
+    "appThemeId": -1,
+    "pageCodeFolders": {
+      "object": {
+        "Metrics": {
+          "array": []
+        },
+        "AssetManager": {
+          "array": []
+        },
+        "page1": {
+          "array": []
+        }
+      }
+    },
+    "notificationsSettings": {
+      "object": {
+        "globalQueryShowFailureToast": true,
+        "globalQueryShowSuccessToast": false,
+        "globalQueryToastDuration": 4.5
+      }
+    },
+    "rootScreen": "AssetManager",
+    "version": "3.192.0"
+  }
+}
