@@ -199,7 +199,6 @@
   },
   "deadlineInput": {
     "container": "orderExistingAssetForm",
-    "row": 0,
     "height": 0.2,
     "width": 12
   },
@@ -435,20 +434,6 @@
     "stackPosition": {
       "object": {
         "ordinal": 11,
-        "widthType": "fixed",
-        "width": 0,
-        "height": 0
-      }
-    }
-  },
-  "text9": {
-    "container": "container1",
-    "subcontainer": "00030",
-    "row": 23.2,
-    "height": 0.6,
-    "stackPosition": {
-      "object": {
-        "ordinal": 2,
         "widthType": "fixed",
         "width": 0,
         "height": 0

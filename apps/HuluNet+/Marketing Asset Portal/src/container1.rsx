@@ -246,10 +246,5 @@
         type="custom"
       />
     </Table>
-    <Text
-      id="text9"
-      value="{{ assetsTable.selectedRow.language }}"
-      verticalAlign="center"
-    />
   </View>
 </Container>
