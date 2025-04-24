@@ -7,18 +7,6 @@
   sticky={true}
   type="header"
 >
-  <Avatar
-    id="avatar3"
-    fallback="{{ current_user.fullName }}"
-    hideLabel={false}
-    horizontalAlign="right"
-    imageSize={32}
-    label=""
-    labelAlign="right"
-    labelPosition="left"
-    src="{{ current_user.profilePhotoUrl }}"
-    style={{ map: { background: "automatic" } }}
-  />
   <Navigation
     id="navigation3"
     itemMode="static"
@@ -36,6 +24,7 @@
     />
     <Option
       id="5f0cf"
+      hidden="{{ current_user.groups.some(g=>g.name === 'Publicity') }}"
       icon="bold/money-graph"
       iconPosition="left"
       itemType="page"
@@ -43,4 +32,16 @@
       screenTargetId="Metrics"
     />
   </Navigation>
+  <Avatar
+    id="avatar3"
+    fallback="{{ current_user.fullName }}"
+    hideLabel={false}
+    horizontalAlign="right"
+    imageSize={32}
+    label=""
+    labelAlign="right"
+    labelPosition="left"
+    src="{{ current_user.profilePhotoUrl }}"
+    style={{ map: { background: "automatic" } }}
+  />
 </Frame>
