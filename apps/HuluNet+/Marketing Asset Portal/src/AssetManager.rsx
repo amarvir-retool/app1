@@ -1,0 +1,142 @@
+<Screen
+  id="AssetManager"
+  _customShortcuts={[]}
+  _hashParams={[]}
+  _searchParams={[]}
+  browserTitle=""
+  title="Page 1"
+  urlSlug=""
+>
+  <SqlQueryUnified
+    id="getAllAssets"
+    notificationDuration={4.5}
+    query={include("../lib/getAllAssets.sql", "string")}
+    resourceDisplayName="retool_db"
+    resourceName="399b4641-787c-47b6-8d12-411163ab1704"
+    showSuccessToaster={false}
+    showUpdateSetValueDynamicallyToggle={false}
+    updateSetValueDynamically={true}
+    warningCodes={[]}
+  />
+  <SqlQueryUnified
+    id="orderExistingAsset"
+    actionType="INSERT"
+    changeset={
+      '[{"key":"date","value":"{{ new Date() }}"},{"key":"status","value":"Order placed"},{"key":"deadline","value":"{{ deadlineInput.value }}"},{"key":"ordered_by","value":"{{ current_user.firstName[0] + current_user.lastName }}"},{"key":"order_type","value":"From existing asset"},{"key":"description","value":"{{ assetsTable.selectedRow.description }}"},{"key":"id","value":"{{ getLatestOrderID.data.id[0] + 1}}"}]'
+    }
+    changesetObject="{{ orderExistingAssetForm.data }}"
+    editorMode="gui"
+    isMultiplayerEdited={false}
+    notificationDuration={4.5}
+    resourceDisplayName="retool_db"
+    resourceName="399b4641-787c-47b6-8d12-411163ab1704"
+    runWhenModelUpdates={false}
+    showSuccessToaster={false}
+    tableName="asset_orders"
+  >
+    <Event
+      event="success"
+      method="trigger"
+      params={{}}
+      pluginId="getLatestOrderID"
+      type="datasource"
+      waitMs="0"
+      waitType="debounce"
+    />
+    <Event
+      event="success"
+      method="showNotification"
+      params={{
+        map: {
+          options: {
+            notificationType: "success",
+            title: "Order placed successfully",
+          },
+        },
+      }}
+      pluginId=""
+      type="util"
+      waitMs="0"
+      waitType="debounce"
+    />
+    <Event
+      event="success"
+      method="trigger"
+      params={{}}
+      pluginId="sendSlackNotification"
+      type="datasource"
+      waitMs="0"
+      waitType="debounce"
+    />
+  </SqlQueryUnified>
+  <SqlQueryUnified
+    id="getLatestOrderID"
+    query={include("../lib/getLatestOrderID.sql", "string")}
+    resourceDisplayName="retool_db"
+    resourceName="399b4641-787c-47b6-8d12-411163ab1704"
+    warningCodes={[]}
+  />
+  <SqlQueryUnified
+    id="orderNewAsset"
+    actionType="INSERT"
+    changeset={
+      '[{"key":"id","value":"{{ getLatestOrderID.data.id[0] + 1}}"},{"key":"date","value":"{{ new Date() }}"},{"key":"status","value":"Order placed"},{"key":"ordered_by","value":"{{ current_user.firstName[0] + current_user.lastName }}"},{"key":"order_type","value":"New"},{"key":"description","value":"{{ descriptionInput.value }}"},{"key":"deadline","value":"{{ deadlineInput2.value }}"}]'
+    }
+    editorMode="gui"
+    isMultiplayerEdited={false}
+    resourceDisplayName="retool_db"
+    resourceName="399b4641-787c-47b6-8d12-411163ab1704"
+    runWhenModelUpdates={false}
+    tableName="asset_orders"
+  >
+    <Event
+      event="success"
+      method="showNotification"
+      params={{
+        map: {
+          options: {
+            notificationType: "success",
+            title: "Order placed successfully",
+          },
+        },
+      }}
+      pluginId=""
+      type="util"
+      waitMs="0"
+      waitType="debounce"
+    />
+    <Event
+      event="success"
+      method="trigger"
+      params={{}}
+      pluginId="getAllAssets"
+      type="datasource"
+      waitMs="0"
+      waitType="debounce"
+    />
+    <Event
+      event="success"
+      method="trigger"
+      params={{}}
+      pluginId="sendSlackNotification"
+      type="datasource"
+      waitMs="0"
+      waitType="debounce"
+    />
+  </SqlQueryUnified>
+  <WorkflowRun
+    id="sendSlackNotification"
+    isMultiplayerEdited={false}
+    notificationDuration={4.5}
+    resourceName="WorkflowRun"
+    showSuccessToaster={false}
+    workflowId="77af8a9a-effa-44ec-8f69-2408111f030a"
+    workflowParams={include("../lib/sendSlackNotification.json", "string")}
+    workflowRunBodyType="json"
+  />
+  <Include src="./modalNewAssetOrder.rsx" />
+  <Include src="./modalOrderExistingAsset.rsx" />
+  <Frame id="$main" enableFullBleed={true} padding="8px 12px" type="main">
+    <Include src="./container1.rsx" />
+  </Frame>
+</Screen>
