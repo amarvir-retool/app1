@@ -3,7 +3,7 @@
   "version": "43.0.9",
   "pageUuid": "2fdd490e-2020-11f0-b602-fb174e43ae3e",
   "appTemplate": {
-    "appThemeId": -1,
+    "appThemeId": 149279,
     "pageCodeFolders": {
       "object": {
         "Metrics": {
@@ -25,6 +25,7 @@
       }
     },
     "rootScreen": "AssetManager",
-    "version": "3.192.0"
+    "appThemeName": "Red Ventures",
+    "version": "3.194.0"
   }
 }
