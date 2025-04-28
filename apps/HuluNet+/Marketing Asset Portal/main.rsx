@@ -1,4 +1,5 @@
 <App>
+  <Include src="./functions.rsx" />
   <Include src="./src/AssetManager.rsx" />
   <Include src="./src/Metrics.rsx" />
   <Include src="./src/Tasks.rsx" />
