@@ -1,0 +1,109 @@
+id: branch1
+type: datasource
+subtype: JavascriptQuery
+resourceName: JavascriptQuery
+template:
+  queryRefreshTime: ''
+  allowedGroupIds: []
+  streamResponse: false
+  lastReceivedFromResourceAt: null
+  isFunction: false
+  functionParameters: null
+  queryDisabledMessage: ''
+  servedFromCache: false
+  offlineUserQueryInputs: ''
+  functionDescription: null
+  successMessage: ''
+  queryDisabled: ''
+  playgroundQuerySaveId: latest
+  workflowParams: null
+  resourceNameOverride: ''
+  runWhenModelUpdates: false
+  workflowRunExecutionType: sync
+  showFailureToaster: true
+  query: |-
+    if ((setApprovalTask.data.status === "Approved")) {
+      executePathAtMostOnce('0')
+    }
+    else { executePathAtMostOnce('1') }
+  playgroundQueryUuid: ''
+  playgroundQueryId: null
+  error: null
+  workflowRunBodyType: raw
+  privateParams: []
+  queryRunOnSelectorUpdate: false
+  runWhenPageLoadsDelay: ''
+  data: null
+  importedQueryInputs: {}
+  _additionalScope: []
+  isImported: false
+  showSuccessToaster: true
+  cacheKeyTtl: ''
+  requestSentTimestamp: null
+  metadata: null
+  editorMode: sql
+  queryRunTime: null
+  changesetObject: ''
+  offlineOptimisticResponse: null
+  errorTransformer: return data.error
+  finished: null
+  confirmationMessage: null
+  isFetching: false
+  changeset: ''
+  rawData: null
+  queryTriggerDelay: '0'
+  resourceTypeOverride: null
+  watchedParams: []
+  enableErrorTransformer: false
+  showLatestVersionUpdatedWarning: false
+  timestamp: 0
+  evalType: script
+  importedQueryDefaults: {}
+  enableTransformer: false
+  showUpdateSetValueDynamicallyToggle: true
+  overrideOrgCacheForUserCache: false
+  runWhenPageLoads: false
+  transformer: return data
+  events: []
+  queryTimeout: '10000'
+  workflowId: null
+  requireConfirmation: false
+  queryFailureConditions: ''
+  changesetIsObject: false
+  enableCaching: false
+  allowedGroups: []
+  offlineQueryType: None
+  queryThrottleTime: '750'
+  updateSetValueDynamically: false
+  notificationDuration: ''
+createdAt: 2025-04-28T11:47:05.125Z
+blockData:
+  top: -80
+  left: 1184
+  uuid: 671360fd-49df-43b3-9040-1b43474ad87b
+  options:
+    conditions:
+      - id: c7499107-2fe4-4efb-8214-58f9a72fbf27
+        type: if
+        statement: (setApprovalTask.data.status === "Approved")
+        outgoingPortId: da151185-9181-44bf-a63c-b7ac80108f4c
+      - id: c593ddf2-d238-428c-a0bd-63c765f2adf3
+        type: else
+        statement: ''
+        outgoingPortId: 58a287e5-6888-4a8a-843c-7690bf7864b7
+  pluginId: branch1
+  blockType: conditional
+  editorType: JavascriptQuery
+  onboarding: false
+  isMinimized: false
+  resourceName: JavascriptQuery
+  incomingPorts: []
+  outgoingPorts:
+    - id: da151185-9181-44bf-a63c-b7ac80108f4c
+      name: '0'
+      type: conditional
+    - id: 58a287e5-6888-4a8a-843c-7690bf7864b7
+      name: '1'
+      type: conditional
+  incomingOnSuccessEdges:
+    - f188e593-349a-4046-9464-8a7c9cc732e6

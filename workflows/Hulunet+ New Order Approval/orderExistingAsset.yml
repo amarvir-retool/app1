@@ -1,0 +1,105 @@
+id: orderExistingAsset
+type: datasource
+subtype: SqlQueryUnified
+resourceName: 399b4641-787c-47b6-8d12-411163ab1704
+resourceDisplayName: retool_db
+template:
+  queryRefreshTime: ''
+  allowedGroupIds: []
+  streamResponse: false
+  records: ''
+  lastReceivedFromResourceAt: null
+  isFunction: false
+  databasePasswordOverride: ''
+  functionParameters: null
+  queryDisabledMessage: ''
+  servedFromCache: false
+  offlineUserQueryInputs: ''
+  functionDescription: null
+  successMessage: ''
+  queryDisabled: ''
+  playgroundQuerySaveId: latest
+  workflowParams: null
+  resourceNameOverride: ''
+  runWhenModelUpdates: false
+  workflowRunExecutionType: sync
+  showFailureToaster: true
+  query: ''
+  playgroundQueryUuid: ''
+  playgroundQueryId: null
+  error: null
+  workflowRunBodyType: raw
+  privateParams: []
+  queryRunOnSelectorUpdate: false
+  runWhenPageLoadsDelay: ''
+  data: null
+  recordId: ''
+  importedQueryInputs: {}
+  _additionalScope: []
+  isImported: false
+  showSuccessToaster: true
+  dataArray: []
+  cacheKeyTtl: ''
+  filterBy: ''
+  requestSentTimestamp: null
+  databaseHostOverride: ''
+  metadata: null
+  editorMode: gui
+  queryRunTime: null
+  actionType: INSERT
+  changesetObject: '{{ startTrigger.data }}'
+  shouldUseLegacySql: false
+  offlineOptimisticResponse: null
+  errorTransformer: return data.error
+  finished: null
+  databaseNameOverride: ''
+  confirmationMessage: null
+  isFetching: false
+  changeset: '[]'
+  rawData: null
+  queryTriggerDelay: '0'
+  resourceTypeOverride: null
+  watchedParams: []
+  enableErrorTransformer: false
+  databaseWarehouseOverride: ''
+  enableBulkUpdates: false
+  showLatestVersionUpdatedWarning: false
+  timestamp: 0
+  evalType: script
+  importedQueryDefaults: {}
+  enableTransformer: false
+  showUpdateSetValueDynamicallyToggle: true
+  overrideOrgCacheForUserCache: false
+  bulkUpdatePrimaryKey: ''
+  runWhenPageLoads: false
+  transformer: return data
+  events: []
+  tableName: asset_orders
+  queryTimeout: '10000'
+  workflowId: null
+  requireConfirmation: false
+  queryFailureConditions: ''
+  changesetIsObject: true
+  enableCaching: false
+  allowedGroups: []
+  databaseUsernameOverride: ''
+  databaseRoleOverride: ''
+  shouldEnableBatchQuerying: false
+  doNotThrowOnNoOp: false
+  offlineQueryType: None
+  queryThrottleTime: '750'
+  updateSetValueDynamically: false
+  notificationDuration: ''
+createdAt: 2025-04-28T10:26:26.846Z
+blockData:
+  top: -224
+  left: 1904
+  uuid: c2aa14e6-872e-4d98-9fcf-8f8069cccf85
+  pluginId: orderExistingAsset
+  blockType: default
+  editorType: SqlQueryUnified
+  resourceName: 399b4641-787c-47b6-8d12-411163ab1704
+  incomingPorts:
+    - portId: da151185-9181-44bf-a63c-b7ac80108f4c
+      blockId: 671360fd-49df-43b3-9040-1b43474ad87b
+  incomingOnSuccessEdges: []
