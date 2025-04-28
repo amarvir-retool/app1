@@ -7,7 +7,7 @@
     "width": 12,
     "stackPosition": {
       "object": {
-        "ordinal": 9,
+        "ordinal": 8,
         "widthType": "fixed",
         "width": 0,
         "height": 0
@@ -22,7 +22,7 @@
     "width": 12,
     "stackPosition": {
       "object": {
-        "ordinal": 7,
+        "ordinal": 6,
         "widthType": "fixed",
         "width": 0,
         "height": 0
@@ -82,7 +82,7 @@
     "width": 12,
     "stackPosition": {
       "object": {
-        "ordinal": 14,
+        "ordinal": 13,
         "widthType": "fixed",
         "width": 0,
         "height": 0
@@ -112,7 +112,7 @@
     "width": 12,
     "stackPosition": {
       "object": {
-        "ordinal": 12,
+        "ordinal": 11,
         "widthType": "fixed",
         "width": 0,
         "height": 0
@@ -136,12 +136,12 @@
     }
   },
   "button1": {
-    "container": "container1",
+    "container": "container6",
     "subcontainer": "00030",
-    "row": 1.2,
-    "col": 10,
+    "row": 0.2,
+    "col": 3,
     "height": 0.8,
-    "width": 2,
+    "width": 9,
     "stackPosition": {
       "object": {
         "ordinal": 0,
@@ -163,6 +163,22 @@
       }
     }
   },
+  "container6": {
+    "container": "container1",
+    "subcontainer": "00030",
+    "row": 0.8,
+    "col": 10,
+    "height": 0.2,
+    "width": 2,
+    "stackPosition": {
+      "object": {
+        "ordinal": 0,
+        "widthType": "fixed",
+        "width": 0,
+        "height": 0
+      }
+    }
+  },
   "containerTitle1": {
     "container": "container1",
     "rowGroup": "header",
@@ -171,6 +187,12 @@
   },
   "containerTitle2": {
     "container": "selectedAssetDetails",
+    "rowGroup": "header",
+    "height": 0.6,
+    "width": 12
+  },
+  "containerTitle7": {
+    "container": "container6",
     "rowGroup": "header",
     "height": 0.6,
     "width": 12
@@ -241,7 +263,7 @@
     "width": 10,
     "stackPosition": {
       "object": {
-        "ordinal": 15,
+        "ordinal": 14,
         "widthType": "fixed",
         "width": 230,
         "height": 200
@@ -271,7 +293,7 @@
   "orderExistingAssetButton": {
     "container": "selectedAssetDetails",
     "subcontainer": "00030",
-    "row": 17.2,
+    "row": 16.2,
     "col": 3,
     "height": 1,
     "width": 6,
@@ -331,7 +353,7 @@
   "selectedAssetDetails": {
     "container": "container1",
     "subcontainer": "00030",
-    "row": 3.2,
+    "row": 1,
     "col": 8,
     "height": 0.2,
     "stackPosition": {
@@ -351,7 +373,7 @@
     "width": 12,
     "stackPosition": {
       "object": {
-        "ordinal": 8,
+        "ordinal": 7,
         "widthType": "fixed",
         "width": 0,
         "height": 0
@@ -366,7 +388,7 @@
     "width": 12,
     "stackPosition": {
       "object": {
-        "ordinal": 10,
+        "ordinal": 9,
         "widthType": "fixed",
         "width": 0,
         "height": 0
@@ -396,7 +418,7 @@
     "width": 12,
     "stackPosition": {
       "object": {
-        "ordinal": 13,
+        "ordinal": 12,
         "widthType": "fixed",
         "width": 0,
         "height": 0
@@ -411,7 +433,7 @@
     "width": 12,
     "stackPosition": {
       "object": {
-        "ordinal": 11,
+        "ordinal": 10,
         "widthType": "fixed",
         "width": 0,
         "height": 0
