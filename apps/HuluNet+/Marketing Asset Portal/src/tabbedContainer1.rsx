@@ -14,6 +14,7 @@
       id="tabs"
       itemMode="static"
       navigateContainer={true}
+      style={{}}
       targetContainerId="tabbedContainer1"
       value="{{ self.values[0] }}"
     >

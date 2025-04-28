@@ -1,13 +1,13 @@
 {
-  "avatar3": {
+  "avatar4": {
     "subcontainer": "header3",
-    "col": 11,
+    "col": 10,
     "height": 0.2,
-    "width": 1
+    "width": 2
   },
   "navigation3": {
     "subcontainer": "header3",
-    "height": 1,
-    "width": 5
+    "height": 1.2,
+    "width": 9
   }
 }

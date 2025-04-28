@@ -9,10 +9,16 @@
 >
   <Navigation
     id="navigation3"
+    horizontalAlignment="justify"
     itemMode="static"
     retoolStorageFileId="5284d5c7-e20a-409e-b266-0b1c27ce2751"
     src="https://retool-edge.com/83d4d9a1f1ecd17d111e6b4a014043cd.svg"
     srcType="retoolStorageFileId"
+    style={{
+      fontSize: "labelEmphasizedFont",
+      fontWeight: "labelEmphasizedFont",
+      fontFamily: "labelEmphasizedFont",
+    }}
   >
     <Option
       id="d3ee7"
@@ -31,15 +37,24 @@
       label="Metrics"
       screenTargetId="Metrics"
     />
+    <Option
+      id="576ee"
+      disabled={false}
+      hidden={false}
+      icon="bold/interface-file-clipboard"
+      iconPosition="left"
+      itemType="page"
+      label="Tasks"
+      screenTargetId="Tasks"
+    />
   </Navigation>
   <Avatar
-    id="avatar3"
+    id="avatar4"
     fallback="{{ current_user.fullName }}"
-    hideLabel={false}
-    horizontalAlign="right"
     imageSize={32}
-    label=""
+    label="{{ current_user.fullName }}"
     labelAlign="right"
+    labelCaption="{{ current_user.email }}"
     labelPosition="left"
     src="{{ current_user.profilePhotoUrl }}"
     style={{ map: { background: "automatic" } }}

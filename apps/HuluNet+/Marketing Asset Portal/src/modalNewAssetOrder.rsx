@@ -73,8 +73,14 @@
     <Event
       event="submit"
       method="trigger"
-      params={{}}
-      pluginId="orderNewAsset"
+      params={{
+        map: {
+          options: {
+            object: { onSuccess: null, onFailure: null, additionalScope: null },
+          },
+        },
+      }}
+      pluginId="newOrderApproval"
       type="datasource"
       waitMs="0"
       waitType="debounce"
