@@ -86,7 +86,6 @@ blockData:
     taskType: userTask
     appConfig:
       - uuid: 2fdd490e-2020-11f0-b602-fb174e43ae3e
-      - uuid: 8ac9a2fc-2441-11f0-949b-93f3eafea389
     assignees:
       - id: 1614890
         type: user
