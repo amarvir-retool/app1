@@ -2,7 +2,7 @@ id: sendSlackMessage
 type: datasource
 subtype: OpenAPIQuery
 resourceName: 93a5a318-4d69-493a-abb6-5d6e8dd37034
-resourceDisplayName: 'Amarvir Retool Slack '
+resourceDisplayName: Amarvir Retool Slack
 template:
   queryRefreshTime: ''
   requestBodyMetadata: ''

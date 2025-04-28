@@ -5,6 +5,7 @@
   isHiddenOnMobile={true}
   padding="8px 12px"
   sticky={true}
+  style={{ map: { "primary-surface": "surfacePrimary" } }}
   type="header"
 >
   <Navigation
@@ -25,6 +26,7 @@
       icon="bold/interface-align-layers-1"
       iconPosition="left"
       itemType="page"
+      key="47290"
       label="Asset Manager"
       screenTargetId="AssetManager"
     />
@@ -46,6 +48,15 @@
       itemType="page"
       label="Tasks"
       screenTargetId="Tasks"
+    />
+    <Option
+      id="cccc1"
+      disabled={false}
+      hidden={false}
+      icon="bold/interface-setting-cog"
+      iconPosition="left"
+      itemType="app"
+      label="Settings"
     />
   </Navigation>
   <Avatar

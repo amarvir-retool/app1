@@ -4,6 +4,7 @@
   headerPadding="4px 12px"
   padding="12px"
   showBody={true}
+  style={{ map: { background: "canvas" } }}
 >
   <Header>
     <Text
@@ -13,44 +14,6 @@
     />
   </Header>
   <View id="00030" viewKey="View 1">
-    <Container
-      id="container2"
-      footerPadding="4px 12px"
-      headerPadding="4px 12px"
-      padding="12px"
-      showBody={true}
-      showBorder={false}
-    >
-      <Header>
-        <Text
-          id="containerTitle3"
-          value="#### Container title"
-          verticalAlign="center"
-        />
-      </Header>
-      <View id="00030" viewKey="View 1">
-        <Button id="button1" heightType="auto" text="New order">
-          <Event
-            event="click"
-            method="show"
-            params={{}}
-            pluginId="modalNewAssetOrder"
-            type="widget"
-            waitMs="0"
-            waitType="debounce"
-          />
-          <Event
-            event="click"
-            method="trigger"
-            params={{}}
-            pluginId="getLatestOrderID"
-            type="datasource"
-            waitMs="0"
-            waitType="debounce"
-          />
-        </Button>
-      </View>
-    </Container>
     <Select
       id="filterAssetsTable"
       data="{{ getAllAssets.data }}"
@@ -65,7 +28,6 @@
       value=""
       values="{{ item.type}}"
     />
-    <Include src="./selectedAssetDetails.rsx" />
     <TextInput
       id="searchAssetsTable"
       iconBefore="bold/interface-search"
@@ -73,6 +35,26 @@
       labelPosition="top"
       placeholder="search"
     />
+    <Button id="button1" heightType="auto" text="New order">
+      <Event
+        event="click"
+        method="show"
+        params={{}}
+        pluginId="modalNewAssetOrder"
+        type="widget"
+        waitMs="0"
+        waitType="debounce"
+      />
+      <Event
+        event="click"
+        method="trigger"
+        params={{}}
+        pluginId="getLatestOrderID"
+        type="datasource"
+        waitMs="0"
+        waitType="debounce"
+      />
+    </Button>
     <Table
       id="assetsTable"
       cellSelection="none"
@@ -241,5 +223,6 @@
         type="custom"
       />
     </Table>
+    <Include src="./selectedAssetDetails.rsx" />
   </View>
 </Container>

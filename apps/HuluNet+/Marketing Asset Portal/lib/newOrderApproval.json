@@ -1,5 +1,4 @@
 [
-  { "key": "id", "value": "{{ getLatestOrderID.data.id[0] + 1}}" },
   { "key": "date", "value": "{{ new Date() }}" },
   { "key": "status", "value": "Order placed" },
   {
@@ -8,5 +7,6 @@
   },
   { "key": "order_type", "value": "New" },
   { "key": "description", "value": "{{ descriptionInput.value }}" },
-  { "key": "deadline", "value": "{{ deadlineInput2.value }}" }
+  { "key": "deadline", "value": "{{ deadlineInput2.value }}" },
+  { "key": "id", "value": "{{ getLatestOrderID.data.id[0] + 1 }}" }
 ]
