@@ -90,13 +90,16 @@
       defaultSelectedRow={{ mode: "index", indexType: "display", index: 0 }}
       emptyMessage="No rows found"
       enableSaveActions={true}
+      groupByColumns={{}}
       heightType="auto"
+      overflowType="pagination"
       primaryKeyColumnId="b37cc"
       rowHeight="medium"
       searchTerm="{{ searchAssetsTable.value }}"
       showBorder={true}
       showFooter={true}
       showHeader={true}
+      templatePageSize="40"
       toolbarPosition="bottom"
     >
       <Column
@@ -112,7 +115,6 @@
         placeholder="Enter value"
         position="center"
         size={100}
-        summaryAggregationMode="none"
       />
       <Column
         id="636c8"
@@ -124,7 +126,6 @@
         placeholder="Enter value"
         position="center"
         size={224}
-        summaryAggregationMode="none"
       />
       <Column
         id="8e51c"
@@ -137,7 +138,6 @@
         placeholder="Select option"
         position="center"
         size={188}
-        summaryAggregationMode="none"
         valueOverride="{{ _.startCase(item) }}"
       />
       <Column
@@ -151,7 +151,6 @@
         placeholder="Enter value"
         position="center"
         size={313}
-        summaryAggregationMode="none"
       />
       <Column
         id="04283"
@@ -165,7 +164,6 @@
         placeholder="Select option"
         position="center"
         size={162}
-        summaryAggregationMode="none"
         valueOverride="{{ _.startCase(item) }}"
       />
       <Column
@@ -180,7 +178,6 @@
         placeholder="Select option"
         position="center"
         size={151}
-        summaryAggregationMode="none"
         valueOverride="{{ _.startCase(item) }}"
       />
       <Column
@@ -202,7 +199,6 @@
         placeholder="Enter value"
         position="center"
         size={165.390625}
-        summaryAggregationMode="none"
       />
       <Column
         id="741e6"
@@ -215,7 +211,6 @@
         label="Media"
         position="center"
         size={100}
-        summaryAggregationMode="none"
       >
         <Event
           event="clickCell"

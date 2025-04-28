@@ -134,6 +134,14 @@
     workflowParams={include("../lib/sendSlackNotification.json", "string")}
     workflowRunBodyType="json"
   />
+  <WorkflowRun
+    id="newOrderApproval"
+    resourceName="WorkflowRun"
+    workflowId="95afa5d9-c12b-4130-8700-721e888c7e9d"
+    workflowParams={include("../lib/newOrderApproval.json", "string")}
+    workflowRunBodyType="json"
+    workflowRunExecutionType="async"
+  />
   <Include src="./modalNewAssetOrder.rsx" />
   <Include src="./modalOrderExistingAsset.rsx" />
   <Frame id="$main" enableFullBleed={true} padding="8px 12px" type="main">
