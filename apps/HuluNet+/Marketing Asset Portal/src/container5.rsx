@@ -6,6 +6,7 @@
   showBody={true}
   showBorder={false}
   showHeader={true}
+  style={{ map: { background: "canvas" } }}
 >
   <Header>
     <Text

@@ -70,6 +70,7 @@ The context is {{ chartType.value }}"
       overflowType="hidden"
       padding="12px"
       showBody={true}
+      style={{ map: { background: "canvas" } }}
     >
       <Header>
         <Text

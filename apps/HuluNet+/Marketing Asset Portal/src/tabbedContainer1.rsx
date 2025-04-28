@@ -8,6 +8,7 @@
   showBorder={false}
   showHeader={true}
   showHeaderBorder={false}
+  style={{ map: { background: "canvas" } }}
 >
   <Header>
     <Tabs
@@ -69,6 +70,7 @@
       quarterStartMonth={1}
       renderOneEventPerRow={true}
       showTodayIndicator={true}
+      style={{ background: "canvas", headerBackground: "canvas" }}
       timescale={{ unit: "month", split: "date" }}
     />
   </View>

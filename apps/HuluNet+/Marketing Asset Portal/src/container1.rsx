@@ -28,33 +28,54 @@
       value=""
       values="{{ item.type}}"
     />
+    <Container
+      id="container6"
+      footerPadding="4px 12px"
+      headerPadding="4px 12px"
+      padding="12px"
+      showBody={true}
+      showBorder={false}
+      style={{ map: { background: "canvas" } }}
+    >
+      <Header>
+        <Text
+          id="containerTitle7"
+          value="#### Container title"
+          verticalAlign="center"
+        />
+      </Header>
+      <View id="00030" viewKey="View 1">
+        <Button id="button1" heightType="auto" text="New order">
+          <Event
+            event="click"
+            method="show"
+            params={{}}
+            pluginId="modalNewAssetOrder"
+            type="widget"
+            waitMs="0"
+            waitType="debounce"
+          />
+          <Event
+            event="click"
+            method="trigger"
+            params={{}}
+            pluginId="getLatestOrderID"
+            type="datasource"
+            waitMs="0"
+            waitType="debounce"
+          />
+        </Button>
+      </View>
+    </Container>
     <TextInput
       id="searchAssetsTable"
       iconBefore="bold/interface-search"
       label=""
       labelPosition="top"
       placeholder="search"
+      style={{}}
     />
-    <Button id="button1" heightType="auto" text="New order">
-      <Event
-        event="click"
-        method="show"
-        params={{}}
-        pluginId="modalNewAssetOrder"
-        type="widget"
-        waitMs="0"
-        waitType="debounce"
-      />
-      <Event
-        event="click"
-        method="trigger"
-        params={{}}
-        pluginId="getLatestOrderID"
-        type="datasource"
-        waitMs="0"
-        waitType="debounce"
-      />
-    </Button>
+    <Include src="./selectedAssetDetails.rsx" />
     <Table
       id="assetsTable"
       cellSelection="none"
@@ -81,6 +102,7 @@
       showBorder={true}
       showFooter={true}
       showHeader={true}
+      style={{ background: "canvas" }}
       templatePageSize="40"
       toolbarPosition="bottom"
     >
@@ -223,6 +245,5 @@
         type="custom"
       />
     </Table>
-    <Include src="./selectedAssetDetails.rsx" />
   </View>
 </Container>
