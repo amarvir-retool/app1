@@ -9,6 +9,8 @@
 >
   <SqlQueryUnified
     id="getAllAssets"
+    cacheKeyTtl={300}
+    enableCaching={true}
     notificationDuration={4.5}
     query={include("../lib/getAllAssets.sql", "string")}
     resourceDisplayName="retool_db"
