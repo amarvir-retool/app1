@@ -8,7 +8,12 @@ template:
   allowedGroupIds: []
   toEmail: amarvir@retool.com
   streamResponse: false
-  body: Order has been rejected
+  body: >-
+    Hi!
+
+
+    An order made by {{ startTrigger.data.ordered_by }} has not been processed
+    and been declined.
   lastReceivedFromResourceAt: null
   isFunction: false
   functionParameters: null

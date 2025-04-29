@@ -8,7 +8,12 @@ template:
   allowedGroupIds: []
   toEmail: amarvir@retool.com
   streamResponse: false
-  body: New order placed
+  body: >-
+    Hi!
+
+
+    A new order placed by {{ startTrigger.data.ordered_by }} with order ID: {{
+    startTrigger.data.id }}
   lastReceivedFromResourceAt: null
   isFunction: false
   functionParameters: null
