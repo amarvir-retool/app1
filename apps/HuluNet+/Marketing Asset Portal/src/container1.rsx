@@ -134,14 +134,16 @@
       <Column
         id="8e51c"
         alignment="left"
+        editable="false"
         format="tag"
-        formatOptions={{ automaticColors: true }}
+        formatOptions={{ automaticColors: true, color: "" }}
         groupAggregationMode="none"
         key="type"
         label="Media Type"
         placeholder="Select option"
         position="center"
         size={188}
+        summaryAggregationMode="none"
         valueOverride="{{ _.startCase(item) }}"
       />
       <Column
