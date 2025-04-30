@@ -61,11 +61,10 @@
   </Navigation>
   <Avatar
     id="avatar4"
-    fallback="{{ current_user.fullName }}"
+    horizontalAlign="right"
     imageSize={32}
-    label="{{ current_user.fullName }}"
+    label=""
     labelAlign="right"
-    labelCaption="{{ current_user.email }}"
     labelPosition="left"
     src="{{ current_user.profilePhotoUrl }}"
     style={{ map: { background: "automatic" } }}
