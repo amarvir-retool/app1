@@ -1,0 +1,108 @@
+{
+  "button3": {
+    "container": "tabbedContainer3",
+    "subcontainer": "c9fcd",
+    "row": 0,
+    "col": 5,
+    "height": 1,
+    "width": 7,
+    "stackPosition": {
+      "object": {
+        "ordinal": 3,
+        "widthType": "fixed",
+        "width": 0,
+        "height": 0
+      }
+    }
+  },
+  "button4": {
+    "row": 1.8,
+    "col": 1,
+    "height": 0.8,
+    "width": 4
+  },
+  "fileInput1": {
+    "row": 1.6,
+    "col": 1,
+    "height": 0.2,
+    "width": 4
+  },
+  "pdf1": {
+    "row": 1.6,
+    "col": 6,
+    "height": 19.2,
+    "width": 6
+  },
+  "tabbedContainer3": {
+    "row": 4.2,
+    "col": 1,
+    "height": 0.2,
+    "width": 4,
+    "stackPosition": {
+      "object": {
+        "ordinal": 0,
+        "widthType": "fixed",
+        "width": 0,
+        "height": 0
+      }
+    }
+  },
+  "tabs3": {
+    "container": "tabbedContainer3",
+    "rowGroup": "header",
+    "col": 7,
+    "height": 0.6,
+    "width": 5
+  },
+  "text3": {
+    "container": "tabbedContainer3",
+    "subcontainer": "c9fcd",
+    "row": 1.6,
+    "height": 0.6,
+    "width": 12,
+    "stackPosition": {
+      "object": {
+        "ordinal": 0,
+        "widthType": "fixed",
+        "width": 0,
+        "height": 0
+      }
+    }
+  },
+  "text4": {
+    "container": "tabbedContainer3",
+    "rowGroup": "header",
+    "subcontainer": "c9fcd",
+    "height": 0.6,
+    "width": 6
+  },
+  "text5": {
+    "container": "tabbedContainer3",
+    "subcontainer": "5a247",
+    "row": 1.4,
+    "height": 0.6,
+    "width": 12,
+    "stackPosition": {
+      "object": {
+        "ordinal": 2,
+        "widthType": "fixed",
+        "width": 0,
+        "height": 0
+      }
+    }
+  },
+  "textInput2": {
+    "container": "tabbedContainer3",
+    "subcontainer": "5a247",
+    "height": 0.2,
+    "width": 12,
+    "stackPosition": {
+      "object": {
+        "ordinal": 1,
+        "widthType": "fixed",
+        "width": 0,
+        "height": 0
+      }
+    }
+  }
+}
