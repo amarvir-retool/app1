@@ -1,0 +1,7 @@
+{
+  "start_date": {{ dateRange1.value.start}},
+  "end_date": {{ dateRange1.value.end}},
+  "printing_office": {{ select1.value }} ,
+  "media_type": {{ multiselect1.value}} ,
+  "technician": {{ select2.value }}
+}
