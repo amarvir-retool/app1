@@ -223,15 +223,6 @@
         waitMs="0"
         waitType="debounce"
       />
-      <Event
-        event="submit"
-        method="trigger"
-        params={{}}
-        pluginId="updateBatchRecord"
-        type="datasource"
-        waitMs="0"
-        waitType="debounce"
-      />
     </Form>
     <Button
       id="modalCloseButton2"
