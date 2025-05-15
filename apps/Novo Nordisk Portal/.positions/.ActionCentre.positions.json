@@ -19,70 +19,6 @@
       }
     }
   },
-  "button11": {
-    "container": "container8",
-    "subcontainer": "00030",
-    "row": 3.6,
-    "col": 2,
-    "height": 0.8,
-    "width": 7,
-    "stackPosition": {
-      "object": {
-        "ordinal": 6,
-        "widthType": "fixed",
-        "width": 0,
-        "height": 0
-      }
-    }
-  },
-  "button12": {
-    "container": "container8",
-    "subcontainer": "00030",
-    "row": 8.6,
-    "col": 2,
-    "height": 0.8,
-    "width": 7,
-    "stackPosition": {
-      "object": {
-        "ordinal": 4,
-        "widthType": "fixed",
-        "width": 0,
-        "height": 0
-      }
-    }
-  },
-  "button13": {
-    "container": "container8",
-    "subcontainer": "00030",
-    "row": 11,
-    "col": 2,
-    "height": 0.8,
-    "width": 7,
-    "stackPosition": {
-      "object": {
-        "ordinal": 2,
-        "widthType": "fixed",
-        "width": 0,
-        "height": 0
-      }
-    }
-  },
-  "button14": {
-    "container": "container8",
-    "subcontainer": "00030",
-    "row": 15.8,
-    "col": 2,
-    "height": 0.8,
-    "width": 7,
-    "stackPosition": {
-      "object": {
-        "ordinal": 0,
-        "widthType": "fixed",
-        "width": 0,
-        "height": 0
-      }
-    }
-  },
   "button8": {
     "container": "container4",
     "subcontainer": "00030",
@@ -185,20 +121,6 @@
       }
     }
   },
-  "container8": {
-    "subcontainer": "sidebarFrame2",
-    "row": 1,
-    "height": 0.2,
-    "width": 1,
-    "stackPosition": {
-      "object": {
-        "ordinal": 0,
-        "widthType": "fixed",
-        "width": 0,
-        "height": 0
-      }
-    }
-  },
   "containerTitle2": {
     "container": "container3",
     "rowGroup": "header",
@@ -231,79 +153,8 @@
     "height": 0.6,
     "width": 12
   },
-  "containerTitle7": {
-    "container": "container8",
-    "rowGroup": "header",
-    "height": 0.6,
-    "width": 12
-  },
-  "image2": {
-    "container": "container8",
-    "subcontainer": "00030",
-    "row": 0.2,
-    "col": 1,
-    "height": 0.6,
-    "width": 10,
-    "stackPosition": {
-      "object": {
-        "ordinal": 7,
-        "widthType": "fixed",
-        "width": 0,
-        "height": 0
-      }
-    }
-  },
-  "image3": {
-    "container": "container8",
-    "subcontainer": "00030",
-    "row": 5.4,
-    "col": 1,
-    "height": 0.6,
-    "width": 10,
-    "stackPosition": {
-      "object": {
-        "ordinal": 5,
-        "widthType": "fixed",
-        "width": 0,
-        "height": 0
-      }
-    }
-  },
-  "image4": {
-    "container": "container8",
-    "subcontainer": "00030",
-    "row": 10.4,
-    "col": 1,
-    "height": 0.6,
-    "width": 10,
-    "stackPosition": {
-      "object": {
-        "ordinal": 3,
-        "widthType": "fixed",
-        "width": 0,
-        "height": 0
-      }
-    }
-  },
-  "image5": {
-    "container": "container8",
-    "subcontainer": "00030",
-    "row": 15.2,
-    "col": 1,
-    "height": 0.6,
-    "width": 10,
-    "stackPosition": {
-      "object": {
-        "ordinal": 1,
-        "widthType": "fixed",
-        "width": 0,
-        "height": 0
-      }
-    }
-  },
   "listView1": {
-    "container": "tabbedContainer2",
-    "subcontainer": "00030",
+    "row": 1,
     "height": 16,
     "width": 11,
     "stackPosition": {
@@ -314,6 +165,12 @@
         "height": 0
       }
     }
+  },
+  "novoApplicationNavigation1": {
+    "subcontainer": "sidebarFrame2",
+    "row": 1,
+    "height": 0.2,
+    "width": 1
   },
   "pdf1": {
     "container": "container4",
@@ -360,7 +217,7 @@
     }
   },
   "tabbedContainer2": {
-    "row": 1.2,
+    "row": 27.2,
     "height": 0.2,
     "width": 12,
     "stackPosition": {

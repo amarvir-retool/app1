@@ -100,7 +100,29 @@ Batch {{ batchTable.selectedRow.nn_batch }} with ID:{{ batchTable.selectedRow.id
     workflowParams={include("../lib/investigateBatch.json", "string")}
     workflowRunBodyType="json"
     workflowRunExecutionType="async"
-  />
+  >
+    <Event
+      event="success"
+      method="trigger"
+      params={{}}
+      pluginId="getUserTasks"
+      type="datasource"
+      waitMs="0"
+      waitType="debounce"
+    />
+    <Event
+      event="success"
+      method="openPage"
+      params={{
+        options: { map: { passDataWith: "urlParams" } },
+        pageName: "ActionCentre",
+      }}
+      pluginId=""
+      type="util"
+      waitMs="0"
+      waitType="debounce"
+    />
+  </WorkflowRun>
   <Include src="./modalFrame1.rsx" />
   <Include src="./modalFrame2.rsx" />
   <Include src="./modalFrame3.rsx" />

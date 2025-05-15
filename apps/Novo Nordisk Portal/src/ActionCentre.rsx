@@ -61,6 +61,17 @@ The context is {{ textify.data }}"
       <Option id="00030" value="Open actions" />
       <Option id="00031" value="Tab 2" />
     </Tabs>
+    <ListViewBeta
+      id="listView1"
+      _primaryKeys=""
+      data="{{ getUserTasks.data.data }}"
+      itemWidth="200px"
+      margin="0"
+      numColumns={3}
+      padding="0"
+    >
+      <Include src="./container3.rsx" />
+    </ListViewBeta>
     <Container
       id="tabbedContainer2"
       currentViewKey="{{ self.viewKeys[0] }}"
@@ -71,17 +82,6 @@ The context is {{ textify.data }}"
       showBorder={false}
     >
       <View id="00030" viewKey="Open actions">
-        <ListViewBeta
-          id="listView1"
-          _primaryKeys=""
-          data="{{ getUserTasks.data.data }}"
-          itemWidth="200px"
-          margin="0"
-          numColumns={3}
-          padding="0"
-        >
-          <Include src="./container3.rsx" />
-        </ListViewBeta>
         <Button
           id="refreshButton"
           ariaLabel="Close"

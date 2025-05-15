@@ -48,7 +48,11 @@
         </Button>
       </View>
     </Container>
-    <Include src="./container8.rsx" />
+    <Module
+      id="novoApplicationNavigation1"
+      name="Novo Application Navigation"
+      pageUuid="970ccc46-3185-11f0-8836-5b4f257b135c"
+    />
   </Body>
   <Footer>
     <Avatar
