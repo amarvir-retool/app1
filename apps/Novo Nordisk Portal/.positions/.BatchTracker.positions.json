@@ -1,0 +1,512 @@
+{
+  "OpenCmoDvsInput": {
+    "container": "updateBatchForm",
+    "row": 1.8,
+    "height": 0.2,
+    "width": 12
+  },
+  "OpenNnDvsInput": {
+    "container": "updateBatchForm",
+    "row": 2,
+    "height": 0.2,
+    "width": 12
+  },
+  "avatar2": {
+    "rowGroup": "footer",
+    "subcontainer": "sidebarFrame1",
+    "height": 0.2,
+    "width": 1
+  },
+  "barChart1": {
+    "container": "container1",
+    "subcontainer": "00030",
+    "row": 10.6,
+    "height": 6.8,
+    "width": 12,
+    "stackPosition": {
+      "object": {
+        "ordinal": 7,
+        "widthType": "fixed",
+        "width": 0,
+        "height": 0
+      }
+    }
+  },
+  "batchAgeDays)Input": {
+    "container": "updateBatchForm",
+    "row": 1,
+    "height": 0.2,
+    "width": 12
+  },
+  "batchCommentInput": {
+    "container": "updateBatchForm",
+    "row": 3,
+    "height": 0.2,
+    "width": 12
+  },
+  "batchPriorityInput": {
+    "container": "updateBatchForm",
+    "row": 2.8,
+    "height": 0.2,
+    "width": 12
+  },
+  "batchTable": {
+    "container": "tabbedContainer1",
+    "subcontainer": "00030",
+    "height": 1,
+    "width": 12,
+    "stackPosition": {
+      "object": {
+        "ordinal": 0,
+        "widthType": "fixed",
+        "width": 0,
+        "height": 0
+      }
+    }
+  },
+  "button1": {
+    "type": "stack",
+    "container": "group1",
+    "subcontainer": "00030",
+    "col": 7,
+    "height": 1,
+    "width": 5,
+    "stackPosition": {
+      "object": {
+        "ordinal": 1,
+        "widthType": "fill",
+        "width": 73,
+        "height": 20
+      }
+    }
+  },
+  "button2": {
+    "type": "stack",
+    "container": "container1",
+    "subcontainer": "00030",
+    "height": 0.8,
+    "width": 8,
+    "stackPosition": {
+      "object": {
+        "ordinal": 3,
+        "widthType": "fixed",
+        "width": 73,
+        "height": 20
+      }
+    }
+  },
+  "button3": {
+    "subcontainer": "modalFrame1",
+    "row": 3.4,
+    "col": 8,
+    "height": 1,
+    "width": 2
+  },
+  "button4": {
+    "container": "container2",
+    "subcontainer": "00030",
+    "height": 1,
+    "width": 4,
+    "stackPosition": {
+      "object": {
+        "ordinal": 2,
+        "widthType": "fixed",
+        "width": 0,
+        "height": 0
+      }
+    }
+  },
+  "button5": {
+    "container": "container2",
+    "subcontainer": "00030",
+    "col": 4,
+    "height": 1,
+    "width": 4,
+    "stackPosition": {
+      "object": {
+        "ordinal": 1,
+        "widthType": "fixed",
+        "width": 0,
+        "height": 0
+      }
+    }
+  },
+  "button6": {
+    "container": "container2",
+    "subcontainer": "00030",
+    "col": 8,
+    "height": 1,
+    "width": 4,
+    "stackPosition": {
+      "object": {
+        "ordinal": 0,
+        "widthType": "fixed",
+        "width": 0,
+        "height": 0
+      }
+    }
+  },
+  "button7": {
+    "subcontainer": "modalFrame3",
+    "row": 2.2,
+    "col": 8,
+    "height": 1,
+    "width": 2
+  },
+  "cmoReleaseDateInput": {
+    "container": "updateBatchForm",
+    "row": 2.2,
+    "height": 0.2,
+    "width": 12
+  },
+  "cmoSiteNameInput": {
+    "container": "updateBatchForm",
+    "row": 0.4,
+    "height": 0.2,
+    "width": 12
+  },
+  "container1": {
+    "subcontainer": "sidebarFrame1",
+    "height": 1,
+    "width": 1,
+    "stackPosition": {
+      "object": {
+        "ordinal": 0,
+        "widthType": "fixed",
+        "width": 0,
+        "height": 0
+      }
+    }
+  },
+  "container2": {
+    "container": "tabbedContainer1",
+    "rowGroup": "header",
+    "subcontainer": "00030",
+    "col": 9,
+    "height": 0.2,
+    "stackPosition": {
+      "object": {
+        "ordinal": 0,
+        "widthType": "fixed",
+        "width": 0,
+        "height": 0
+      }
+    }
+  },
+  "containerTitle1": {
+    "container": "container2",
+    "rowGroup": "header",
+    "height": 0.6,
+    "width": 12
+  },
+  "date1": {
+    "container": "container1",
+    "subcontainer": "00030",
+    "row": 17.4,
+    "height": 0.2,
+    "width": 6,
+    "stackPosition": {
+      "object": {
+        "ordinal": 4,
+        "widthType": "fixed",
+        "width": 0,
+        "height": 0
+      }
+    }
+  },
+  "date2": {
+    "container": "container1",
+    "subcontainer": "00030",
+    "row": 17.4,
+    "col": 6,
+    "height": 0.2,
+    "width": 6,
+    "stackPosition": {
+      "object": {
+        "ordinal": 2,
+        "widthType": "fixed",
+        "width": 0,
+        "height": 0
+      }
+    }
+  },
+  "finalDvReportReceivedDateInput": {
+    "container": "updateBatchForm",
+    "row": 1.2,
+    "height": 0.2,
+    "width": 12
+  },
+  "formButton1": {
+    "container": "updateBatchForm",
+    "rowGroup": "footer",
+    "col": 9,
+    "height": 1
+  },
+  "formTitle1": {
+    "container": "updateBatchForm",
+    "rowGroup": "header",
+    "height": 0.6,
+    "width": 12
+  },
+  "group1": {
+    "container": "container1",
+    "rowGroup": "header",
+    "subcontainer": "00030",
+    "height": 3.8,
+    "width": 12,
+    "stackPosition": {
+      "object": {
+        "ordinal": 0,
+        "widthType": "fixed",
+        "width": 0,
+        "height": 0
+      }
+    }
+  },
+  "iconText1": {
+    "type": "stack",
+    "container": "group1",
+    "subcontainer": "00030",
+    "height": 0.6,
+    "width": 5,
+    "stackPosition": {
+      "object": {
+        "ordinal": 0,
+        "widthType": "fixed",
+        "width": 73,
+        "height": 24
+      }
+    }
+  },
+  "investigationDeadline": {
+    "subcontainer": "modalFrame3",
+    "row": 2,
+    "col": 1,
+    "height": 0.2,
+    "width": 9
+  },
+  "investigationDescription": {
+    "subcontainer": "modalFrame3",
+    "row": 1,
+    "col": 1,
+    "height": 1,
+    "width": 9
+  },
+  "manufactureToLatestDvReportReceivedInput": {
+    "container": "updateBatchForm",
+    "row": 1.4,
+    "height": 0.2,
+    "width": 12
+  },
+  "manufacturingDateInput": {
+    "container": "updateBatchForm",
+    "row": 0.8,
+    "height": 0.2,
+    "width": 12
+  },
+  "materialNameInput": {
+    "container": "updateBatchForm",
+    "row": 0.6,
+    "height": 0.2,
+    "width": 12
+  },
+  "modalCloseButton1": {
+    "subcontainer": "modalFrame1",
+    "col": 9,
+    "height": 1
+  },
+  "modalCloseButton2": {
+    "subcontainer": "modalFrame2",
+    "col": 11,
+    "height": 1,
+    "width": 1
+  },
+  "modalCloseButton3": {
+    "subcontainer": "modalFrame3",
+    "col": 9,
+    "height": 1
+  },
+  "modalTitle1": {
+    "subcontainer": "modalFrame1",
+    "height": 0.6,
+    "width": 5
+  },
+  "modalTitle2": {
+    "rowGroup": "header",
+    "subcontainer": "modalFrame2",
+    "height": 0.6,
+    "width": 9
+  },
+  "modalTitle3": {
+    "subcontainer": "modalFrame3",
+    "height": 0.6,
+    "width": 9
+  },
+  "multiselectCMO": {
+    "container": "container1",
+    "subcontainer": "00030",
+    "row": 1.2,
+    "height": 3.2,
+    "width": 12,
+    "stackPosition": {
+      "object": {
+        "ordinal": 8,
+        "widthType": "fixed",
+        "width": 0,
+        "height": 0
+      }
+    }
+  },
+  "multiselectMaterialName": {
+    "container": "container1",
+    "subcontainer": "00030",
+    "row": 4.4,
+    "height": 3.2,
+    "width": 12,
+    "stackPosition": {
+      "object": {
+        "ordinal": 0,
+        "widthType": "fixed",
+        "width": 0,
+        "height": 0
+      }
+    }
+  },
+  "multiselectNNBatch": {
+    "container": "container1",
+    "subcontainer": "00030",
+    "row": 1,
+    "height": 0.2,
+    "width": 12,
+    "stackPosition": {
+      "object": {
+        "ordinal": 9,
+        "widthType": "fixed",
+        "width": 0,
+        "height": 0
+      }
+    }
+  },
+  "multiselectNNReleased": {
+    "container": "container1",
+    "subcontainer": "00030",
+    "row": 7.6,
+    "height": 2.4,
+    "width": 12,
+    "stackPosition": {
+      "object": {
+        "ordinal": 6,
+        "widthType": "fixed",
+        "width": 0,
+        "height": 0
+      }
+    }
+  },
+  "multiselectSapBatchStatus": {
+    "container": "container1",
+    "subcontainer": "00030",
+    "row": 17.6,
+    "height": 2.4,
+    "width": 12,
+    "stackPosition": {
+      "object": {
+        "ordinal": 1,
+        "widthType": "fixed",
+        "width": 0,
+        "height": 0
+      }
+    }
+  },
+  "nnBatchInput": {
+    "container": "updateBatchForm",
+    "height": 0.2,
+    "width": 12
+  },
+  "nnReleaseDateInput": {
+    "container": "updateBatchForm",
+    "row": 2.4,
+    "height": 0.2,
+    "width": 12
+  },
+  "nnReleasedInput": {
+    "container": "updateBatchForm",
+    "row": 0.2,
+    "height": 0.2,
+    "width": 12
+  },
+  "sapBatchStatusInput": {
+    "container": "updateBatchForm",
+    "row": 1.6,
+    "height": 0.2,
+    "width": 12
+  },
+  "tabbedContainer1": {
+    "row": 0,
+    "height": 24,
+    "width": 12,
+    "stackPosition": {
+      "object": {
+        "ordinal": 0,
+        "widthType": "fixed",
+        "width": 0,
+        "height": 0
+      }
+    }
+  },
+  "tabs1": {
+    "container": "tabbedContainer1",
+    "rowGroup": "header",
+    "subcontainer": "00030",
+    "height": 0.6,
+    "width": 7,
+    "stackPosition": {
+      "object": {
+        "ordinal": 0,
+        "widthType": "fixed",
+        "width": 0,
+        "height": 0
+      }
+    }
+  },
+  "text1": {
+    "container": "container1",
+    "subcontainer": "00030",
+    "row": 10,
+    "height": 1,
+    "width": 12,
+    "stackPosition": {
+      "object": {
+        "ordinal": 5,
+        "widthType": "fixed",
+        "width": 0,
+        "height": 0
+      }
+    }
+  },
+  "textArea1": {
+    "subcontainer": "modalFrame1",
+    "row": 1.2,
+    "col": 2,
+    "height": 1,
+    "width": 8
+  },
+  "updateBatchForm": {
+    "subcontainer": "modalFrame2",
+    "col": 1,
+    "width": 10,
+    "stackPosition": {
+      "object": {
+        "ordinal": 0,
+        "widthType": "fixed",
+        "width": 0,
+        "height": 0
+      }
+    }
+  },
+  "vendorBatchInput": {
+    "container": "updateBatchForm",
+    "row": 2.6,
+    "height": 0.2,
+    "width": 12
+  }
+}
