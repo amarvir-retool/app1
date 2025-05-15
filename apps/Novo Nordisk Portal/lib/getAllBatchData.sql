@@ -1,6 +1,6 @@
 select
   *
 from
-  novo_batch_data_3
+  novo_batch_data
 order by
   batch_age desc

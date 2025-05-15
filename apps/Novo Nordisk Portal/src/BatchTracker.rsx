@@ -35,7 +35,7 @@
     runWhenModelUpdates={false}
     showSuccessToaster={false}
     showUpdateSetValueDynamicallyToggle={false}
-    tableName="novo_batch_data_3"
+    tableName="novo_batch_data"
     updateSetValueDynamically={true}
   >
     <Event
