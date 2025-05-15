@@ -288,8 +288,8 @@
       />
     </Chart>
     <Date
-      id="date2"
-      dateFormat="end"
+      id="date1"
+      dateFormat="start"
       datePlaceholder="{{ self.dateFormat.toUpperCase() }}"
       iconBefore="bold/interface-calendar"
       label=""
@@ -298,8 +298,8 @@
       value="{{ new Date() }}"
     />
     <Date
-      id="date1"
-      dateFormat="start"
+      id="date2"
+      dateFormat="end"
       datePlaceholder="{{ self.dateFormat.toUpperCase() }}"
       iconBefore="bold/interface-calendar"
       label=""

@@ -12,7 +12,6 @@
   },
   "navigation1": {
     "subcontainer": "header",
-    "row": 0,
     "col": 1,
     "height": 1.2,
     "width": 7
