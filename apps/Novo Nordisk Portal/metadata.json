@@ -3,6 +3,7 @@
   "version": "43.0.9",
   "pageUuid": "813e46c8-2cb8-11f0-84c2-63437251654f",
   "appTemplate": {
+    "inAppRetoolPillAppearance": "HIDE_MENU",
     "pageCodeFolders": {
       "object": {
         "BatchTracker": {
@@ -17,7 +18,7 @@
       }
     },
     "rootScreen": "BatchTracker",
-    "version": "3.205.0",
+    "version": "3.206.0",
     "experimentalDataTabEnabled": true
   }
 }

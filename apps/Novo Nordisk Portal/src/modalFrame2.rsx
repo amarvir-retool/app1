@@ -227,6 +227,7 @@
     <Button
       id="modalCloseButton2"
       ariaLabel="Close"
+      hidden={'{{ current_user.email === "amarvir@retool.com" }}'}
       horizontalAlign="right"
       iconBefore="bold/interface-delete-1"
       style={{ map: { border: "transparent" } }}
