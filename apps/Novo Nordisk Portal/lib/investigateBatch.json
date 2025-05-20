@@ -1,0 +1,6 @@
+[
+  { "key": "batchRecord", "value": "{{ batchTable.selectedRow }}" },
+  { "key": "description", "value": "{{ investigationDescription.value }}" },
+  { "key": "deadline", "value": "{{ investigationDeadline.value }}" },
+  { "key": "user", "value": "{{ current_user.fullName }}" }
+]
