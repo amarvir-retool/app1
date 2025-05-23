@@ -1,0 +1,112 @@
+{
+  "budgetBarChart": {
+    "container": "tabbedContainer1",
+    "subcontainer": "00031",
+    "height": 7.6,
+    "width": 12,
+    "stackPosition": {
+      "object": {
+        "ordinal": 5,
+        "widthType": "fixed",
+        "width": 0,
+        "height": 0
+      }
+    }
+  },
+  "button2": {
+    "container": "tabbedContainer1",
+    "rowGroup": "header",
+    "subcontainer": "00030",
+    "col": 10,
+    "height": 1,
+    "width": 2
+  },
+  "container3": {
+    "row": 11.8,
+    "col": 4,
+    "height": 1,
+    "width": 6,
+    "stackPosition": {
+      "object": {
+        "ordinal": 0,
+        "widthType": "fixed",
+        "width": 0,
+        "height": 0
+      }
+    }
+  },
+  "containerTitle4": {
+    "container": "container3",
+    "rowGroup": "header",
+    "height": 0.6,
+    "width": 12
+  },
+  "deliveryScatterChart": {
+    "container": "tabbedContainer1",
+    "subcontainer": "00032",
+    "height": 7.6,
+    "width": 12,
+    "stackPosition": {
+      "object": {
+        "ordinal": 6,
+        "widthType": "fixed",
+        "width": 0,
+        "height": 0
+      }
+    }
+  },
+  "drawerCloseButton1": {
+    "rowGroup": "header",
+    "subcontainer": "drawerFrame1",
+    "col": 9,
+    "height": 1
+  },
+  "drawerTitle1": {
+    "rowGroup": "header",
+    "subcontainer": "drawerFrame1",
+    "height": 0.6,
+    "width": 9
+  },
+  "ordersTimeline": {
+    "container": "tabbedContainer1",
+    "subcontainer": "00030",
+    "height": 16,
+    "width": 12,
+    "stackPosition": {
+      "object": {
+        "ordinal": 7,
+        "widthType": "fixed",
+        "width": 0,
+        "height": 0
+      }
+    }
+  },
+  "tabbedContainer1": {
+    "container": "container3",
+    "subcontainer": "00030",
+    "row": 0.6,
+    "col": 1,
+    "height": 4,
+    "width": 10,
+    "stackPosition": {
+      "object": {
+        "ordinal": 0,
+        "widthType": "fixed",
+        "width": 0,
+        "height": 0
+      }
+    }
+  },
+  "tabs": {
+    "container": "tabbedContainer1",
+    "rowGroup": "header",
+    "subcontainer": "00031",
+    "height": 0.6,
+    "width": 8
+  },
+  "text17": {
+    "subcontainer": "drawerFrame1",
+    "height": 0.6,
+    "width": 12
+  }
+}
