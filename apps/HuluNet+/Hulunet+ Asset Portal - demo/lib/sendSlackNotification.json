@@ -1,6 +1,0 @@
-[
-  {
-    "key": "text",
-    "value": "An asset has been ordered by {{ current_user.fullName }} "
-  }
-]
