@@ -87,17 +87,5 @@
         "height": 0
       }
     }
-  },
-  "table1": {
-    "row": 2.4,
-    "col": 1,
-    "height": 13.2,
-    "width": 10
-  },
-  "textInput1": {
-    "row": 0.6,
-    "col": 1,
-    "height": 0.2,
-    "width": 4
   }
 }
