@@ -30,12 +30,12 @@
       value="{{ item.context.description }}"
       verticalAlign="center"
     />
+    <Text id="workflowId7" value="Ordered by:" verticalAlign="center" />
     <Text
       id="orderedBy"
       value="{{ item.context.ordered_by }}"
       verticalAlign="center"
     />
-    <Text id="workflowId7" value="Ordered by:" verticalAlign="center" />
     <Button id="declineButton" text="Decline">
       <Event
         event="click"

@@ -6,6 +6,7 @@
   browserTitle=""
   title={null}
   urlSlug=""
+  uuid="e5faa554-a7ab-4dd8-b519-a8ad1e1551da"
 >
   <RetoolUserActionQuery
     id="getAllPendingOrders"

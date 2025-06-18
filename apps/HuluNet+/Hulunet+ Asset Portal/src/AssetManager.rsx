@@ -6,6 +6,7 @@
   browserTitle=""
   title="Page 1"
   urlSlug=""
+  uuid="0645b668-a436-4943-894e-104434239ef0"
 >
   <SqlQueryUnified
     id="getAllAssets"
