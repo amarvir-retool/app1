@@ -53,10 +53,10 @@
       id="cccc1"
       disabled={false}
       hidden={false}
-      icon="bold/interface-setting-cog"
+      icon="bold/interface-file-add-alternate"
       iconPosition="left"
       itemType="app"
-      label="Settings"
+      label="Orders"
     />
   </Navigation>
   <Avatar
