@@ -55,8 +55,9 @@
       hidden={false}
       icon="bold/interface-file-add-alternate"
       iconPosition="left"
-      itemType="app"
+      itemType="page"
       label="Orders"
+      screenTargetId="Orders"
     />
   </Navigation>
   <Avatar
