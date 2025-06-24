@@ -87,5 +87,11 @@
         "height": 0
       }
     }
+  },
+  "table1": {
+    "row": 3.8,
+    "col": 1,
+    "height": 8,
+    "width": 8
   }
 }
