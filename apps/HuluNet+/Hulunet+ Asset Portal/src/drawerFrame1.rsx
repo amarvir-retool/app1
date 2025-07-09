@@ -7,7 +7,6 @@
   isHiddenOnMobile={true}
   overlayInteraction={true}
   padding="8px 12px"
-  showFooter={true}
   showHeader={true}
   showOverlay={true}
   width="large"
