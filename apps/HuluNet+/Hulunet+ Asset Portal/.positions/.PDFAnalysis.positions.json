@@ -1,0 +1,152 @@
+{
+  "button15": {
+    "container": "container7",
+    "subcontainer": "00030",
+    "row": 0.6,
+    "col": 5,
+    "height": 1,
+    "width": 1,
+    "stackPosition": {
+      "object": {
+        "ordinal": 1,
+        "widthType": "fixed",
+        "width": 0,
+        "height": 0
+      }
+    }
+  },
+  "button16": {
+    "container": "container7",
+    "subcontainer": "00030",
+    "row": 0.6,
+    "col": 4,
+    "height": 1,
+    "width": 1,
+    "stackPosition": {
+      "object": {
+        "ordinal": 2,
+        "widthType": "fixed",
+        "width": 0,
+        "height": 0
+      }
+    }
+  },
+  "container7": {
+    "height": 0.2,
+    "width": 12,
+    "stackPosition": {
+      "object": {
+        "ordinal": 0,
+        "widthType": "fixed",
+        "width": 0,
+        "height": 0
+      }
+    }
+  },
+  "container8": {
+    "container": "container7",
+    "subcontainer": "00030",
+    "row": 2.6,
+    "col": 6,
+    "height": 0.2,
+    "width": 5,
+    "stackPosition": {
+      "object": {
+        "ordinal": 3,
+        "widthType": "fixed",
+        "width": 0,
+        "height": 0
+      }
+    }
+  },
+  "containerTitle8": {
+    "container": "container8",
+    "rowGroup": "header",
+    "height": 0.6,
+    "width": 12
+  },
+  "containerTitle9": {
+    "container": "container7",
+    "rowGroup": "header",
+    "height": 0.6,
+    "width": 12
+  },
+  "drawerCloseButton2": {
+    "rowGroup": "header",
+    "subcontainer": "drawerFrame2",
+    "col": 9,
+    "height": 1
+  },
+  "drawerTitle2": {
+    "rowGroup": "header",
+    "subcontainer": "drawerFrame2",
+    "height": 0.6,
+    "width": 9
+  },
+  "llmChat1": {
+    "subcontainer": "drawerFrame2",
+    "height": 9.6,
+    "width": 4
+  },
+  "pdf1": {
+    "container": "container7",
+    "subcontainer": "00030",
+    "row": 2.6,
+    "col": 1,
+    "height": 19.8,
+    "width": 5,
+    "stackPosition": {
+      "object": {
+        "ordinal": 4,
+        "widthType": "fixed",
+        "width": 0,
+        "height": 0
+      }
+    }
+  },
+  "pdfFileUpload": {
+    "container": "container7",
+    "subcontainer": "00030",
+    "row": 0.6,
+    "col": 1,
+    "height": 0.2,
+    "width": 2,
+    "stackPosition": {
+      "object": {
+        "ordinal": 0,
+        "widthType": "fixed",
+        "width": 0,
+        "height": 0
+      }
+    }
+  },
+  "text19": {
+    "container": "container8",
+    "subcontainer": "00030",
+    "row": 1.2,
+    "height": 0.6,
+    "width": 11,
+    "stackPosition": {
+      "object": {
+        "ordinal": 1,
+        "widthType": "fixed",
+        "width": 0,
+        "height": 0
+      }
+    }
+  },
+  "text20": {
+    "container": "container8",
+    "subcontainer": "00030",
+    "height": 0.6,
+    "width": 8,
+    "stackPosition": {
+      "object": {
+        "ordinal": 0,
+        "widthType": "fixed",
+        "width": 0,
+        "height": 0
+      }
+    }
+  }
+}

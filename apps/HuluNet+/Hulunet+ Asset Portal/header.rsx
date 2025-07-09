@@ -46,11 +46,22 @@
       icon="bold/interface-file-clipboard"
       iconPosition="left"
       itemType="page"
+      key="2a79a257-ecc4-4b82-8fba-5c2a75e7485f"
       label="Tasks"
       screenTargetId="Tasks"
     />
     <Option
       id="cccc1"
+      disabled={false}
+      hidden={false}
+      icon="bold/interface-file-double"
+      iconPosition="left"
+      itemType="page"
+      label="PDF Analysis"
+      screenTargetId="PDFAnalysis"
+    />
+    <Option
+      id="af07c"
       disabled={false}
       hidden={false}
       icon="bold/interface-setting-cog"

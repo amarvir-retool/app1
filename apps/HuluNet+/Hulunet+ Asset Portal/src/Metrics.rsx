@@ -52,7 +52,7 @@ The context is {{ chartType.value }}"
     resourceName="retool_ai"
     showSuccessToaster={false}
   />
-  <State id="chartType" value="ordersTimeline.data" />
+  <State id="chartType" value="{{ ordersTimeline.data }}" />
   <JavascriptQuery
     id="setChartType"
     isMultiplayerEdited={false}
