@@ -10,7 +10,7 @@
   showFooter={true}
   showHeader={true}
   showOverlay={true}
-  width="medium"
+  width="large"
 >
   <Header>
     <Text id="drawerTitle1" value="### AI analysis" verticalAlign="center" />
