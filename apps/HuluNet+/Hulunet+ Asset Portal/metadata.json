@@ -17,6 +17,9 @@
         },
         "PDFAnalysis": {
           "array": []
+        },
+        "Settings": {
+          "array": []
         }
       }
     },
@@ -29,6 +32,6 @@
     },
     "rootScreen": "AssetManager",
     "appThemeName": "Red Ventures",
-    "version": "3.233.0"
+    "version": "3.234.0"
   }
 }

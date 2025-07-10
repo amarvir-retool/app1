@@ -4,5 +4,6 @@
   <Include src="./src/Metrics.rsx" />
   <Include src="./src/Tasks.rsx" />
   <Include src="./src/PDFAnalysis.rsx" />
+  <Include src="./src/Settings.rsx" />
   <Include src="./header.rsx" />
 </App>

@@ -66,8 +66,9 @@
       hidden={false}
       icon="bold/interface-setting-cog"
       iconPosition="left"
-      itemType="app"
+      itemType="page"
       label="Settings"
+      screenTargetId="Settings"
     />
   </Navigation>
   <Avatar
