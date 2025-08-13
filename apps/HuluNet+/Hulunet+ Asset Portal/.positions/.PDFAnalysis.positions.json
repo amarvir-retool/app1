@@ -8,7 +8,7 @@
     "width": 1,
     "stackPosition": {
       "object": {
-        "ordinal": 1,
+        "ordinal": 2,
         "widthType": "fixed",
         "width": 0,
         "height": 0
@@ -24,7 +24,7 @@
     "width": 1,
     "stackPosition": {
       "object": {
-        "ordinal": 2,
+        "ordinal": 3,
         "widthType": "fixed",
         "width": 0,
         "height": 0
@@ -52,7 +52,7 @@
     "width": 5,
     "stackPosition": {
       "object": {
-        "ordinal": 3,
+        "ordinal": 4,
         "widthType": "fixed",
         "width": 0,
         "height": 0
@@ -97,7 +97,7 @@
     "width": 5,
     "stackPosition": {
       "object": {
-        "ordinal": 4,
+        "ordinal": 5,
         "widthType": "fixed",
         "width": 0,
         "height": 0
@@ -112,7 +112,7 @@
     "height": 0.2,
     "stackPosition": {
       "object": {
-        "ordinal": 0,
+        "ordinal": 1,
         "widthType": "fixed",
         "width": 0,
         "height": 0
