@@ -15,6 +15,22 @@
     />
   </Header>
   <View id="00030" viewKey="View 1">
+    <FileInput
+      id="pdfFileUpload"
+      _isUpgraded={true}
+      iconBefore="bold/programming-browser-search"
+      label=""
+      labelPosition="top"
+      maxCount={20}
+      maxSize="250mb"
+      placeholder="Upload a PDF"
+      style={{
+        sharedLabelFontSize: "labelFont",
+        sharedLabelFontWeight: "labelFont",
+        sharedLabelFontFamily: "labelFont",
+      }}
+      textBefore="Browse"
+    />
     <Button
       id="button16"
       style={{
@@ -65,22 +81,6 @@
         waitType="debounce"
       />
     </Button>
-    <FileInput
-      id="pdfFileUpload"
-      _isUpgraded={true}
-      iconBefore="bold/programming-browser-search"
-      label=""
-      labelPosition="top"
-      maxCount={20}
-      maxSize="250mb"
-      placeholder="Upload a PDF"
-      style={{
-        sharedLabelFontSize: "labelFont",
-        sharedLabelFontWeight: "labelFont",
-        sharedLabelFontFamily: "labelFont",
-      }}
-      textBefore="Browse"
-    />
     <PDFViewer
       id="pdf1"
       retoolFileObject="{{ pdfFileUpload.value[0] }}"
