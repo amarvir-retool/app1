@@ -1,0 +1,1 @@
+select * from lseg_example_data
