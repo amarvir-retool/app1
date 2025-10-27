@@ -1,0 +1,29 @@
+{
+  "barChart1": {
+    "row": 18.8,
+    "height": 7.6,
+    "width": 5
+  },
+  "pieChart1": {
+    "row": 18.8,
+    "col": 5,
+    "height": 7.6,
+    "width": 5
+  },
+  "select1": {
+    "row": 1.6,
+    "col": 4,
+    "height": 0.2,
+    "width": 4
+  },
+  "table1": {
+    "row": 3.4,
+    "height": 14.4,
+    "width": 12
+  },
+  "textInput1": {
+    "row": 1.6,
+    "height": 0.2,
+    "width": 4
+  }
+}
