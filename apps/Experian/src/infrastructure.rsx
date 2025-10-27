@@ -1,0 +1,21 @@
+<Screen
+  id="infrastructure"
+  _customShortcuts={[]}
+  _hashParams={[]}
+  _order={1}
+  _searchParams={[]}
+  browserTitle={null}
+  title={null}
+  urlSlug={null}
+  uuid="2d415236-df05-402a-91d4-ce4254e50587"
+>
+  <Frame
+    id="$main2"
+    enableFullBleed={false}
+    isHiddenOnDesktop={false}
+    isHiddenOnMobile={false}
+    padding="8px 12px"
+    sticky={null}
+    type="main"
+  />
+</Screen>
