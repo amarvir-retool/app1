@@ -122,6 +122,7 @@
   </SqlQueryUnified>
   <WorkflowRun
     id="newOrderApproval"
+    enableTransformer={true}
     resourceName="WorkflowRun"
     workflowId="95afa5d9-c12b-4130-8700-721e888c7e9d"
     workflowParams={include("../lib/newOrderApproval.json", "string")}

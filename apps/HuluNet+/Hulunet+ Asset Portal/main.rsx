@@ -5,6 +5,6 @@
   <Include src="./src/PDFAnalysis.rsx" />
   <Include src="./src/Settings.rsx" />
   <Include src="./src/Tasks.rsx" />
-  <AppStyles id="$appStyles" css="" />
+  <AppStyles id="$appStyles" css={include("./lib/$appStyles.css", "string")} />
   <Include src="./header.rsx" />
 </App>
