@@ -49,6 +49,7 @@
     />
     <Option id="00032" icon="bold/interface-setting-cog" label="Settings" />
     <Event
+      id="07a8e70b"
       event="click"
       method="openPage"
       params={{ map: { pageName: "{{ item.id }}" } }}

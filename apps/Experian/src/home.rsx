@@ -22,6 +22,7 @@
     resourceName="GraphQL-WithoutResource"
     showSuccessToaster={false}
   />
+  <connectResource id="query1" _componentId={null} />
   <Frame
     id="$main"
     enableFullBleed={false}
@@ -329,6 +330,7 @@
         label="Retry"
       >
         <Event
+          id="263c6980"
           event="clickAction"
           method="trigger"
           params={{}}
@@ -351,6 +353,7 @@
         type="custom"
       >
         <Event
+          id="3d3bd685"
           event="clickToolbar"
           method="exportData"
           pluginId="table1"
@@ -366,6 +369,7 @@
         type="custom"
       >
         <Event
+          id="a2adc624"
           event="clickToolbar"
           method="refresh"
           pluginId="table1"
@@ -375,125 +379,5 @@
         />
       </ToolbarButton>
     </Table>
-    <Chart
-      id="barChart1"
-      barGap={0.4}
-      barMode="group"
-      legendPosition="none"
-      selectedPoints="[]"
-      stackedBarTotalsDataLabelPosition="none"
-      title={null}
-      xAxisRangeMax=""
-      xAxisRangeMin=""
-      xAxisShowTickLabels={true}
-      xAxisTickFormatMode="gui"
-      xAxisTitleStandoff={20}
-      yAxis2LineWidth={1}
-      yAxis2RangeMax=""
-      yAxis2RangeMin=""
-      yAxis2ShowTickLabels={true}
-      yAxis2TickFormatMode="gui"
-      yAxis2TitleStandoff={20}
-      yAxisRangeMax=""
-      yAxisRangeMin=""
-      yAxisShowTickLabels={true}
-      yAxisTickFormatMode="gui"
-      yAxisTitleStandoff={20}
-    >
-      <Series
-        id="0"
-        aggregationType="sum"
-        colorArray={{ array: ["{{ theme.primary }}"] }}
-        colorArrayDropDown={{ array: ["{{ theme.primary }}"] }}
-        colorInputMode="colorArrayDropDown"
-        connectorLineColor="#000000"
-        dataLabelPosition="none"
-        datasource="{{ getAllInfraData.data }}"
-        datasourceMode="source"
-        decreasingBorderColor="{{ theme.danger }}"
-        decreasingColor="{{ theme.danger }}"
-        filteredGroups={null}
-        filteredGroupsMode="source"
-        gradientColorArray={{
-          array: [
-            { array: ["0.0", "{{ theme.success }}"] },
-            { array: ["1.0", "{{ theme.primary }}"] },
-          ],
-        }}
-        groupBy={{ array: [] }}
-        groupByDropdownType="source"
-        groupByStyles={{}}
-        hoverTemplate="<b>%{x}</b><br>%{fullData.name}: %{y}<extra></extra>"
-        hoverTemplateMode="source"
-        increasingBorderColor="{{ theme.success }}"
-        increasingColor="{{ theme.success }}"
-        lineColor="{{ theme.primary }}"
-        lineDash="solid"
-        lineShape="linear"
-        lineUnderFillMode="none"
-        lineWidth={2}
-        markerBorderColor={null}
-        markerBorderWidth={0}
-        markerColor="{{ theme.primary }}"
-        markerSize={6}
-        markerSymbol="circle"
-        name="Getallinfradata - cpu_usage_percent"
-        showMarkers={false}
-        textTemplate={null}
-        textTemplateMode="manual"
-        type="bar"
-        waterfallBase={0}
-        waterfallMeasures={null}
-        waterfallMeasuresMode="source"
-        xData="{{ getAllInfraData.data.server_id }}"
-        xDataMode="source"
-        yAxis="y"
-        yData="{{ getAllInfraData.data.cpu_usage_percent }}"
-        yDataMode="source"
-        zData={null}
-        zDataMode="manual"
-      />
-    </Chart>
-    <Chart
-      id="pieChart1"
-      chartType="pie"
-      colorArray={[
-        "#11B5AE",
-        "#4046CA",
-        "#F68512",
-        "#DE3C82",
-        "#7E84FA",
-        "#72E06A",
-      ]}
-      colorArrayDropDown={[
-        "#11B5AE",
-        "#4046CA",
-        "#F68512",
-        "#DE3C82",
-        "#7E84FA",
-        "#72E06A",
-      ]}
-      colorInputMode="colorArrayDropDown"
-      datasource="{{ getAllInfraData.data }}"
-      datasourceMode="source"
-      gradientColorArray={[
-        ["0.0", "{{ theme.canvas }}"],
-        ["1.0", "{{ theme.primary }}"],
-      ]}
-      hoverTemplate="%{label}<br>%{value}<br>%{percent}<extra></extra>"
-      hoverTemplateMode="source"
-      labelData="{{ getAllInfraData.data.server_id }}"
-      labelDataMode="source"
-      legendPosition="none"
-      lineColor="{{ theme.surfacePrimary }}"
-      lineWidth={2}
-      pieDataHole={0.4}
-      selectedPoints="[]"
-      textTemplateMode="source"
-      textTemplatePosition="outside"
-      title={null}
-      valueData="{{ getAllInfraData.data.cpu_usage_percent }}"
-      valueDataMode="source"
-    />
   </Frame>
 </Screen>
