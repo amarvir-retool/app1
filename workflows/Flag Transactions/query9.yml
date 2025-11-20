@@ -1,0 +1,169 @@
+id: query9
+type: datasource
+subtype: RetoolAIQuery
+resourceName: retool_ai
+resourceDisplayName: retool_ai
+template:
+  vectorNamespaceIds: []
+  vectorDynamicUrls: ''
+  queryRefreshTime: ''
+  allowedGroupIds: []
+  vectorActionNamespaceDynamicModeEnabled: false
+  vectorCreateAndFetchDynamicModeEnabled: false
+  streamResponse: true
+  imageClassifierDynamicLabels: ''
+  lastReceivedFromResourceAt: null
+  vectorSemanticSearchString: ''
+  isFunction: false
+  functionParameters: null
+  queryDisabledMessage: ''
+  customTemperature: '0.1'
+  servedFromCache: false
+  offlineUserQueryInputs: ''
+  functionDescription: null
+  successMessage: ''
+  queryDisabled: ''
+  playgroundQuerySaveId: latest
+  workflowParams: null
+  resourceNameOverride: ''
+  runWhenModelUpdates: false
+  workflowRunExecutionType: sync
+  showFailureToaster: true
+  vectorUrls: []
+  customSystemMessage: >-
+    You are a financial risk assistant responsible for generating Slack alerts
+    for high-risk transactions.
+
+
+    Your task is to create a concise, high-priority Slack message that:
+
+    - Summarizes the transaction details
+
+    - Clearly communicates why it's considered high risk
+
+    - Flags it for immediate attention by the appropriate team (compliance or
+    ops)
+
+    - Uses professional, urgent tone without being alarmist
+
+
+    Use bold for key values and an emoji at the top to catch attention. Keep it
+    under 6 lines.
+
+
+    ---
+
+
+    Example Output:
+
+    🚨 *High-Risk Transaction Alert*  
+
+    • **Txn ID:** T8901  
+
+    • **Account:** A200  
+
+    • **Amount:** -$7,800.00 (Deposit)  
+
+    • **Date:** 2025-06-15  
+
+    📌 *Reason:* Negative deposit with placeholder description.  
+
+    ⚠️ *Escalation:* Notify compliance for urgent review.
+  textExtractorDynamicLabels: ''
+  imageExtractorLabels: []
+  query: ''
+  playgroundQueryUuid: ''
+  imageExtractorDynamicModeEnabled: false
+  playgroundQueryId: null
+  error: null
+  workflowRunBodyType: raw
+  privateParams: []
+  model: gpt-4o-mini
+  queryRunOnSelectorUpdate: false
+  runWhenPageLoadsDelay: ''
+  data: null
+  defaultModelInitialized: true
+  providerId: retoolAIBuiltIn::openAI
+  textClassifierLabels: []
+  textClassifierDynamicModeEnabled: false
+  importedQueryInputs: {}
+  instruction: '{{ code4.data }}'
+  isImported: false
+  imageModel: dall-e-3
+  showSuccessToaster: true
+  fileUseDynamicSource: false
+  cacheKeyTtl: ''
+  requestSentTimestamp: null
+  metadata: {}
+  textClassifierDynamicLabels: ''
+  queryRunTime: null
+  changesetObject: ''
+  offlineOptimisticResponse: null
+  errorTransformer: return data.error
+  finished: null
+  embeddingModel: text-embedding-ada-002
+  confirmationMessage: null
+  isFetching: false
+  changeset: ''
+  chatInput: ''
+  rawData: null
+  vectorNamespaceId: ''
+  queryTriggerDelay: '0'
+  resourceTypeOverride: null
+  watchedParams: []
+  vectorDynamicNamespaces: ''
+  enableErrorTransformer: false
+  imageExtractorDynamicLabels: ''
+  multimodalModel: gpt-4o
+  showLatestVersionUpdatedWarning: false
+  vectorActionDynamicNamespace: ''
+  dynamicModelName: ''
+  timestamp: 0
+  evalType: script
+  textExtractorDynamicModeEnabled: false
+  action: textGeneration
+  textExtractorLabels: []
+  importedQueryDefaults: {}
+  enableTransformer: false
+  showUpdateSetValueDynamicallyToggle: true
+  fileSource: ''
+  filterLabels: []
+  dynamicModelEnabled: false
+  systemMessage: You are a helpful assistant
+  overrideOrgCacheForUserCache: false
+  runWhenPageLoads: false
+  content: ''
+  transformer: return data
+  events: []
+  vectorAction: upsertDocument
+  queryTimeout: '120000'
+  workflowId: null
+  vectorNamespacesDynamicModeEnabled: false
+  requireConfirmation: false
+  queryFailureConditions: ''
+  source: ''
+  imageClassifierLabels: []
+  imageClassifierDynamicModeEnabled: false
+  changesetIsObject: false
+  vectorModeEnabled: false
+  vectorNamespaceIdsFilters: []
+  providerName: openAI
+  enableCaching: false
+  allowedGroups: []
+  chatHistory: ''
+  imageContent: ''
+  offlineQueryType: None
+  queryThrottleTime: '750'
+  updateSetValueDynamically: false
+  notificationDuration: ''
+createdAt: 2025-07-22T17:58:46.854Z
+blockData:
+  top: 1440
+  left: 2976
+  uuid: 359ab5f9-1113-4117-88ff-7b2a2ce1ed15
+  pluginId: query9
+  blockType: default
+  editorType: RetoolAIQuery
+  resourceName: retool_ai
+  incomingOnSuccessEdges:
+    - 97455657-dd28-413c-8c74-943aff9f5816

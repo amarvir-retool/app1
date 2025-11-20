@@ -1,0 +1,186 @@
+id: query10
+type: datasource
+subtype: RetoolAIQuery
+resourceName: retool_ai
+resourceDisplayName: retool_ai
+template:
+  vectorNamespaceIds: []
+  vectorDynamicUrls: ''
+  queryRefreshTime: ''
+  allowedGroupIds: []
+  vectorActionNamespaceDynamicModeEnabled: false
+  vectorCreateAndFetchDynamicModeEnabled: false
+  streamResponse: true
+  imageClassifierDynamicLabels: ''
+  lastReceivedFromResourceAt: null
+  vectorSemanticSearchString: ''
+  isFunction: false
+  functionParameters: null
+  queryDisabledMessage: ''
+  customTemperature: '0.1'
+  servedFromCache: false
+  offlineUserQueryInputs: ''
+  functionDescription: null
+  successMessage: ''
+  queryDisabled: ''
+  playgroundQuerySaveId: latest
+  workflowParams: null
+  resourceNameOverride: ''
+  runWhenModelUpdates: false
+  workflowRunExecutionType: sync
+  showFailureToaster: true
+  vectorUrls: []
+  customSystemMessage: >-
+    You are an AI assistant generating follow-up emails for high-risk financial
+    transactions. These emails are sent to the risk or compliance team.
+
+
+    Your email should:
+
+    - Be clear, professional, and concise
+
+    - Include all key transaction fields in a readable format
+
+    - Explain why the transaction is considered high risk
+
+    - Suggest an immediate follow-up or investigation
+
+    - Include a subject line and email body (no signature needed)
+
+
+    ---
+
+
+    Subject: 🚨 High-Risk Transaction Alert – T2001 (Account A105)
+
+
+    Body:
+
+    Hi Team,
+
+
+    A transaction has been flagged as **High Risk** and requires immediate
+    attention:
+
+
+    • **Transaction ID:** T2001  
+
+    • **Account ID:** A105  
+
+    • **Type:** Deposit  
+
+    • **Amount:** -$2,420.54  
+
+    • **Date:** June 26, 2025  
+
+    • **Description:** "Soluta rerum esse animi."
+
+
+    📌 **Reason:** The transaction is a deposit with a *negative amount*, which
+    is typically invalid and may indicate suspicious behavior.
+
+
+    ⚠️ **Recommended Action:** Please investigate and determine whether this
+    transaction was entered in error or requires escalation under compliance
+    protocols.
+
+
+    Let us know if you need additional context or logs.
+  textExtractorDynamicLabels: ''
+  imageExtractorLabels: []
+  query: ''
+  playgroundQueryUuid: ''
+  imageExtractorDynamicModeEnabled: false
+  playgroundQueryId: null
+  error: null
+  workflowRunBodyType: raw
+  privateParams: []
+  model: gpt-4o-mini
+  queryRunOnSelectorUpdate: false
+  runWhenPageLoadsDelay: ''
+  data: null
+  defaultModelInitialized: true
+  providerId: retoolAIBuiltIn::openAI
+  textClassifierLabels: []
+  textClassifierDynamicModeEnabled: false
+  importedQueryInputs: {}
+  instruction: '{{ code4.data }}'
+  isImported: false
+  imageModel: dall-e-3
+  showSuccessToaster: true
+  fileUseDynamicSource: false
+  cacheKeyTtl: ''
+  requestSentTimestamp: null
+  metadata: {}
+  textClassifierDynamicLabels: ''
+  queryRunTime: null
+  changesetObject: ''
+  offlineOptimisticResponse: null
+  errorTransformer: return data.error
+  finished: null
+  embeddingModel: text-embedding-ada-002
+  confirmationMessage: null
+  isFetching: false
+  changeset: ''
+  chatInput: ''
+  rawData: null
+  vectorNamespaceId: ''
+  queryTriggerDelay: '0'
+  resourceTypeOverride: null
+  watchedParams: []
+  vectorDynamicNamespaces: ''
+  enableErrorTransformer: false
+  imageExtractorDynamicLabels: ''
+  multimodalModel: gpt-4o
+  showLatestVersionUpdatedWarning: false
+  vectorActionDynamicNamespace: ''
+  dynamicModelName: ''
+  timestamp: 0
+  evalType: script
+  textExtractorDynamicModeEnabled: false
+  action: textGeneration
+  textExtractorLabels: []
+  importedQueryDefaults: {}
+  enableTransformer: false
+  showUpdateSetValueDynamicallyToggle: true
+  fileSource: ''
+  filterLabels: []
+  dynamicModelEnabled: false
+  systemMessage: You are a helpful assistant
+  overrideOrgCacheForUserCache: false
+  runWhenPageLoads: false
+  content: ''
+  transformer: return data
+  events: []
+  vectorAction: upsertDocument
+  queryTimeout: '120000'
+  workflowId: null
+  vectorNamespacesDynamicModeEnabled: false
+  requireConfirmation: false
+  queryFailureConditions: ''
+  source: ''
+  imageClassifierLabels: []
+  imageClassifierDynamicModeEnabled: false
+  changesetIsObject: false
+  vectorModeEnabled: false
+  vectorNamespaceIdsFilters: []
+  providerName: openAI
+  enableCaching: false
+  allowedGroups: []
+  chatHistory: ''
+  imageContent: ''
+  offlineQueryType: None
+  queryThrottleTime: '750'
+  updateSetValueDynamically: false
+  notificationDuration: ''
+createdAt: 2025-07-22T17:59:41.934Z
+blockData:
+  top: 672
+  left: 3872
+  uuid: c3aef135-55b5-4a9f-88d4-4ff6c0bfdd6b
+  pluginId: query10
+  blockType: default
+  editorType: RetoolAIQuery
+  resourceName: retool_ai
+  incomingOnSuccessEdges:
+    - 97455657-dd28-413c-8c74-943aff9f5816
