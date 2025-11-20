@@ -1,0 +1,111 @@
+id: getCalendarsQuery
+type: datasource
+subtype: OpenAPIQuery
+resourceName: 1c5b1ebc-21cb-4aa3-9ed1-1001b2498695
+resourceDisplayName: Amarvir's Calender
+template:
+  ordered:
+    - queryRefreshTime: ''
+    - method: get
+    - allowedGroupIds:
+        array: []
+    - streamResponse: false
+    - operationId: calendar_events_list
+    - lastReceivedFromResourceAt: null
+    - isFunction: false
+    - functionParameters: null
+    - queryDisabledMessage: ''
+    - servedFromCache: false
+    - server: ''
+    - offlineUserQueryInputs: ''
+    - functionDescription: null
+    - successMessage: ''
+    - queryDisabled: ''
+    - path: /calendars/{calendarId}/events
+    - playgroundQuerySaveId: latest
+    - workflowParams: null
+    - resourceNameOverride: ''
+    - runWhenModelUpdates: false
+    - autoPaginate: false
+    - workflowRunExecutionType: sync
+    - showFailureToaster: true
+    - query: ''
+    - playgroundQueryUuid: ''
+    - playgroundQueryId: null
+    - error: null
+    - workflowRunBodyType: raw
+    - privateParams:
+        array: []
+    - queryRunOnSelectorUpdate: false
+    - runWhenPageLoadsDelay: ''
+    - parameters: >-
+        {"calendarId":"{{ params.email_address }}","maxResults":"{{
+        params.max_results }}","timeMin":"{{ params.time_min }}","timeMax":"{{
+        params.time_max }}", "singleEvents":"true"}
+    - data: null
+    - specPathOverride: ''
+    - importedQueryInputs:
+        object: {}
+    - isImported: false
+    - showSuccessToaster: true
+    - cacheKeyTtl: ''
+    - requestSentTimestamp: null
+    - metadata: null
+    - requestBodyDynamicStates: ''
+    - queryRunTime: null
+    - changesetObject: ''
+    - requestBody: ''
+    - offlineOptimisticResponse: null
+    - errorTransformer: return data.error
+    - specBasePath: ''
+    - finished: null
+    - confirmationMessage: null
+    - isFetching: false
+    - changeset: ''
+    - rawData: null
+    - queryTriggerDelay: '0'
+    - resourceTypeOverride: null
+    - watchedParams:
+        array: []
+    - serverVariables: ''
+    - enableErrorTransformer: false
+    - autoPaginateLimit: 500
+    - showLatestVersionUpdatedWarning: false
+    - timestamp: 0
+    - evalType: script
+    - importedQueryDefaults:
+        object: {}
+    - enableTransformer: false
+    - showUpdateSetValueDynamicallyToggle: true
+    - parameterDynamicStates: >-
+        {"calendarId":false,"alwaysIncludeEmail":false,"iCalUID":false,"maxAttendees":false,"maxResults":false,"orderBy":false,"pageToken":false,"privateExtendedProperty":false,"q":false,"sharedExtendedProperty":false,"showDeleted":false,"showHiddenInvitations":false,"singleEvents":false,"syncToken":false,"timeMax":false,"timeMin":false,"timeZone":false,"updatedMin":false,"fields":false,"prettyPrint":false,"alt":false,"key":false,"oauth_token":false,"quotaUser":false,"userIp":false}
+    - overrideOrgCacheForUserCache: false
+    - runWhenPageLoads: false
+    - transformer: return data
+    - events:
+        array: []
+    - queryTimeout: '10000'
+    - workflowId: null
+    - requireConfirmation: false
+    - queryFailureConditions: ''
+    - changesetIsObject: false
+    - enableCaching: false
+    - allowedGroups:
+        array: []
+    - offlineQueryType: None
+    - queryThrottleTime: '750'
+    - updateSetValueDynamically: false
+    - notificationDuration: ''
+    - parameterMetadata: ''
+    - requestBodyMetadata: ''
+createdAt: 2025-04-25T23:06:43.029Z
+blockData:
+  top: 48
+  left: 448
+  uuid: 3a09511f-94a9-4fba-a7e6-a2801f1e6708
+  pluginId: getCalendarsQuery
+  blockType: default
+  editorType: OpenAPIQuery
+  resourceName: 1c5b1ebc-21cb-4aa3-9ed1-1001b2498695
+  incomingOnSuccessEdges:
+    - bffb24bf-bca0-4061-ac1c-9d1305861fc7

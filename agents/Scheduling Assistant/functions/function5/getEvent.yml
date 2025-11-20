@@ -1,0 +1,114 @@
+id: getEvent
+type: datasource
+subtype: OpenAPIQuery
+resourceName: 1c5b1ebc-21cb-4aa3-9ed1-1001b2498695
+resourceDisplayName: Amarvir's Calender
+template:
+  ordered:
+    - queryRefreshTime: ''
+    - method: get
+    - allowedGroupIds:
+        array: []
+    - streamResponse: false
+    - operationId: calendar_events_get
+    - lastReceivedFromResourceAt: null
+    - isFunction: false
+    - functionParameters: null
+    - queryDisabledMessage: ''
+    - servedFromCache: false
+    - server: default_server_url
+    - offlineUserQueryInputs: ''
+    - functionDescription: null
+    - successMessage: ''
+    - queryDisabled: ''
+    - path: /calendars/{calendarId}/events/{eventId}
+    - playgroundQuerySaveId: latest
+    - workflowParams: null
+    - resourceNameOverride: ''
+    - runWhenModelUpdates: false
+    - autoPaginate: false
+    - workflowRunExecutionType: sync
+    - showFailureToaster: true
+    - query: ''
+    - playgroundQueryUuid: ''
+    - playgroundQueryId: null
+    - error: null
+    - workflowRunBodyType: raw
+    - privateParams:
+        array: []
+    - queryRunOnSelectorUpdate: false
+    - runWhenPageLoadsDelay: ''
+    - parameters: >-
+        {"eventId":"{{ params.event_id }}","calendarId":"{{ params.email_address
+        }}"}
+    - data: null
+    - specPathOverride: ''
+    - importedQueryInputs:
+        object: {}
+    - isImported: false
+    - showSuccessToaster: true
+    - cacheKeyTtl: ''
+    - requestSentTimestamp: null
+    - metadata: null
+    - requestBodyDynamicStates: ''
+    - queryRunTime: null
+    - changesetObject: ''
+    - requestBody: ''
+    - offlineOptimisticResponse: null
+    - errorTransformer: return data.error
+    - specBasePath: default_server_url
+    - finished: null
+    - confirmationMessage: null
+    - isFetching: false
+    - changeset: ''
+    - rawData: null
+    - queryTriggerDelay: '0'
+    - resourceTypeOverride: null
+    - watchedParams:
+        array: []
+    - serverVariables: ''
+    - enableErrorTransformer: false
+    - autoPaginateLimit: 500
+    - showLatestVersionUpdatedWarning: false
+    - timestamp: 0
+    - evalType: script
+    - importedQueryDefaults:
+        object: {}
+    - enableTransformer: false
+    - showUpdateSetValueDynamicallyToggle: true
+    - parameterDynamicStates: >-
+        {"calendarId":false,"eventId":false,"alwaysIncludeEmail":false,"maxAttendees":false,"timeZone":false,"fields":false,"prettyPrint":false,"alt":false,"key":false,"oauth_token":false,"quotaUser":false,"userIp":false}
+    - overrideOrgCacheForUserCache: false
+    - runWhenPageLoads: false
+    - transformer: return data
+    - events:
+        array: []
+    - queryTimeout: '10000'
+    - workflowId: null
+    - requireConfirmation: false
+    - queryFailureConditions: ''
+    - changesetIsObject: false
+    - enableCaching: false
+    - allowedGroups:
+        array: []
+    - offlineQueryType: None
+    - queryThrottleTime: '750'
+    - updateSetValueDynamically: false
+    - notificationDuration: ''
+    - parameterMetadata: ''
+    - requestBodyMetadata: ''
+createdAt: 2025-05-01T18:43:23.649Z
+blockData:
+  top: 64
+  left: 448
+  uuid: ae73f18b-a702-4f5a-9ddd-ee3e8a448d30
+  comment:
+    body: Add one or more attendees to an existing Google Calendar event.
+    visible: true
+    pluginId: getEvent-comment
+  pluginId: getEvent
+  blockType: default
+  editorType: OpenAPIQuery
+  resourceName: 1c5b1ebc-21cb-4aa3-9ed1-1001b2498695
+  incomingOnSuccessEdges:
+    - 27cebb6e-fb5b-4ae9-8df0-f3d265032648

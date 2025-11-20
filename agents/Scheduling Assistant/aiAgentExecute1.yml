@@ -1,0 +1,600 @@
+id: aiAgentExecute1
+type: datasource
+subtype: JavascriptQuery
+resourceName: RetoolAIAgentExecuteQuery
+template:
+  queryRefreshTime: ''
+  allowedGroupIds: []
+  streamResponse: false
+  lastReceivedFromResourceAt: null
+  isFunction: false
+  functionParameters: null
+  queryDisabledMessage: ''
+  servedFromCache: false
+  offlineUserQueryInputs: ''
+  functionDescription: null
+  successMessage: ''
+  queryDisabled: ''
+  instructions: >-
+    This agent can be triggered via email. When triggered by email:
+
+    1. The agent will receive the email content and sender information
+
+    2. The agent may also receive prior messages in the chain.
+
+    3. The agent should use all of the available context to devise a response.
+
+    4. Then the agent should use the "Reply to Email"  tool to send responses
+
+    5. The agent should make sure to include everyone who was on the most
+    recently sent email in Cc or in the To parameter.
+
+    6. The agent should NOT cc anyone who was not on the most recently sent
+    email.
+
+
+    This agent can be triggered via email. When triggered by email:
+
+    1. The agent will receive the email content and sender information
+
+    2. The agent may also receive prior messages in the chain.
+
+    3. The agent should use all of the available context to devise a response.
+
+    4. Then the agent should use the "Reply to Email"  tool to send responses
+
+    5. The agent should make sure to include everyone who was on the most
+    recently sent email in Cc or in the To parameter.
+
+    6. The agent should NOT cc anyone who was not on the most recently sent
+    email.
+
+
+    You are a helpful and professional Executive Assistant tasked with managing
+    your coworkers' calendars. This includes scheduling meetings, rescheduling
+    meetings, updating events, cancelling meetings, and using your judgement to
+    solve complex scheduling issues. 
+
+
+    When you receive a scheduling task, you should:
+
+    - First ensure that you understand the user's request 
+
+    - Reflect on what tasks you've already accomplished
+
+    - Think about what information is still needed and what tools you can use to
+    retrieve it
+
+    - Clearly communicate your thought process as you call tools to complete the
+    task
+
+    - Verify tool output before providing final responses. Chain multiple tool
+    calls together for complex tasks.
+
+    - Always observe the previous steps before deciding on your next action
+
+    - If you need more information from the user, e.g. a person's email address,
+    the meeting duration, always ask for it. 
+
+    - When you have achieved your goal, please respond to the user with a
+    summary of what you've accomplished.
+
+
+    Unless otherwise specified by the user, please use the following
+    assumptions:
+
+    - Schedule all meetings during business hours (9am to 5pm) in the user's
+    current time zone. If you need to schedule time outside of business hours,
+    ask the user for confirmation.
+
+    - Assume that all people mentioned have the same email address domain as the
+    current user {{ current_user.email }}
+
+    - Unless the user specifies a duration, set the meeting duration to 30
+    minutes
+
+
+    Unless the user specifies an event title, use the following heuristics for
+    adding a title:
+
+    - if the meeting is between 3 people or fewer, use a meeting title like
+    "Veronica <> Ivan <> Stacey"
+
+    - if the user indicates a subject for the meeting, use that subject as the
+    meeting title, e.g. "Quick Sync re: ${customerName}" or "Chat about PTO" or
+    "Headcount Planning".
+
+
+    Unless the user specifies an event description, please use this as the
+    default meeting description:
+
+    "Meeting scheduled via {{ current_user.fullName }}'s AI assistant using
+    Retool Agents (https://retool.com/agents)"
+
+
+
+    Remember: 
+
+    - When you need to use a tool, think through which tool would be most
+    appropriate to use. Always pay attention to correctly formatting the input
+    parameters for tools. 
+
+    - If something is ambiguous, for example a user's email address or a date or
+    timezone, please ask the user for confirmation. 
+
+    - If any part of the request is ambiguous or could be interpreted in
+    multiple ways, ask the user a clarifying question before proceeding.
+
+    - You are operating in UTC time zone on a server. The user is chatting with
+    you from {{timezone}}. Whenever you look at calendar availability or
+    schedule events, think carefully about adjusting for timezones.
+
+
+    The user's email address is: {{ current_user.email }}
+
+    The user's name is: {{ current_user?.fullName || current_user?.firstName + '
+    ' + current_user?.lastName }}
+
+    You are operating in UTC timezone and the current date and time is: {{ new
+    Date() }}
+
+    The user's time zone is: {{ timezone }}
+
+
+    If the user expresses uncertainty or asks about what you can do, give them
+    an overview of your capabilities and suggest the following prompt:
+
+    1. What's on my calendar for tomorrow? 
+
+    2. What are my biggest events next week? 
+
+    2. Can you schedule a 30min meeting with me and coworker@{{
+    current_user.email.split('@')[1] }} for tomorrow afternoon? 
+  playgroundQuerySaveId: latest
+  workflowParams: null
+  resourceNameOverride: ''
+  runWhenModelUpdates: false
+  workflowRunExecutionType: sync
+  showFailureToaster: true
+  query: ''
+  playgroundQueryUuid: ''
+  playgroundQueryId: null
+  error: null
+  workflowRunBodyType: raw
+  privateParams: []
+  model: gpt-4.1
+  queryRunOnSelectorUpdate: false
+  runWhenPageLoadsDelay: ''
+  data: null
+  providerId: retoolAIBuiltIn::openAI
+  importedQueryInputs: {}
+  _additionalScope: []
+  isImported: false
+  showSuccessToaster: true
+  cacheKeyTtl: ''
+  requestSentTimestamp: null
+  metadata: null
+  queryRunTime: null
+  changesetObject: ''
+  offlineOptimisticResponse: null
+  errorTransformer: return data.error
+  finished: null
+  confirmationMessage: null
+  isFetching: false
+  changeset: ''
+  drafts:
+    array: []
+  rawData: null
+  queryTriggerDelay: '0'
+  resourceTypeOverride: null
+  watchedParams: []
+  temperature: 0
+  enableErrorTransformer: false
+  showLatestVersionUpdatedWarning: false
+  timestamp: 0
+  mcpServers:
+    array: []
+  importedQueryDefaults: {}
+  enableTransformer: false
+  showUpdateSetValueDynamicallyToggle: true
+  overrideOrgCacheForUserCache: false
+  runWhenPageLoads: false
+  transformer: return data
+  events: []
+  queryTimeout: '10000'
+  workflowId: null
+  maxIterations: 10
+  requireConfirmation: false
+  queryFailureConditions: ''
+  tools:
+    - draft: null
+      approvalRequired: false
+      params:
+        - name: email_address
+          description: >-
+            The calendar to create or query events on. Use "primary" to refer to
+            your main Google Calendar (recommended for most users). Only specify
+            an explicit email address if you need to access a different calendar
+            that you own or manage. Do not use the user email address unless
+            specifically asked. For personal scheduling, "primary" is typically
+            the correct value.
+          type: string
+          required: true
+        - name: max_results
+          description: Maximum number of events to return. Default is 250. Maximum is 2500.
+          type: string
+          required: true
+        - name: time_max
+          description: >-
+            Upper bound (exclusive) for an event’s start time to filter by. Must
+            be an RFC3339 timestamp.
+          type: string
+          required: false
+        - name: time_min
+          description: >-
+            Lower bound (inclusive) for an event’s start time to filter by. Must
+            be an RFC3339 timestamp.
+          type: string
+          required: false
+      handler:
+        type: function
+        functionId: 9ac58c2f-806f-411b-8a16-4f0fe329b558
+      name: Get Calendar Events
+      metadata:
+        iconName: ToolCalendar
+        iconColor: '#4285F4'
+        predefinedToolDefinitionId: calendarGetEvents:1
+        schemaId: calendarGetEvents
+        schemaVersion: 1
+        type: predefined
+        summary: ''
+      handlerTimeout: 10000
+      id: f76fc5b1-b322-43fc-a3cc-9435b3f91cd6
+      description: Get events from a user's Google Calendar.
+    - draft: null
+      approvalRequired: true
+      params:
+        - name: email_address
+          description: >-
+            The calendar to create or query events on. Use "primary" to refer to
+            your main Google Calendar (recommended for most users). Only specify
+            an explicit email address if you need to access a different calendar
+            that you own or manage. Do not use the user email address unless
+            specifically asked. For personal scheduling, "primary" is typically
+            the correct value.
+          type: string
+          required: true
+        - name: event_name
+          description: A short summary or title for the event.
+          type: string
+          required: true
+        - name: description
+          description: Detailed description of the event.
+          type: string
+          required: false
+        - name: location
+          description: Geographic location or address of the event.
+          type: string
+          required: false
+        - name: start_dateTime
+          description: The start date and time of the event in RFC3339 format.
+          type: string
+          required: true
+        - name: start_timeZone
+          description: The time zone for the event start time (e.g., "America/New_York").
+          type: string
+          required: true
+        - name: end_dateTime
+          description: The end date and time of the event in RFC3339 format.
+          type: string
+          required: true
+        - name: end_timeZone
+          description: The time zone for the event end time (e.g., "America/New_York").
+          type: string
+          required: true
+        - name: attendees
+          description: >-
+            Given a list of attendees with name, email, and optional flag,
+            return a JavaScript array of strings. Each string must be a valid,
+            compact JSON object representing a single attendee, with at least
+            the "email" field, and optionally "displayName" and "optional". Do
+            not include extra formatting or wrap the output in an outer object
+            or string. Do not include the requester email address as an
+            attendee.
+          type: array
+          required: false
+          itemType: string
+      handler:
+        type: function
+        functionId: 945b021d-5e18-4bf6-994a-f7b56beefadf
+      name: Create Calendar Event
+      metadata:
+        iconName: ToolCalendar
+        iconColor: gray
+        predefinedToolDefinitionId: calendarCreateEvent:1
+        schemaId: calendarCreateEvent
+        schemaVersion: 1
+        type: predefined
+        summary: ''
+      handlerTimeout: 10000
+      id: 0b1e2b46-a5ca-4094-802c-01c7f84c23a5
+      description: Create a new event on a user's Google Calendar.
+    - draft: null
+      approvalRequired: false
+      params:
+        - name: email_addresses
+          description: >-
+            A comma-separated list of email addresses representing the calendars
+            to check.
+          type: string
+          required: true
+        - name: time_min
+          description: The beginning of the time range to search, in RFC3339 format.
+          type: string
+          required: true
+        - name: time_max
+          description: The end of the time range to search, in RFC3339 format.
+          type: string
+          required: true
+        - name: time_zone
+          description: The time zone to use for the query (e.g., "America/Los_Angeles").
+          type: string
+          required: true
+      handler:
+        type: function
+        functionId: b5238a2d-5f43-4d7b-9bfe-bd61b23085cb
+      name: Get Open Time Slots
+      metadata:
+        iconName: ToolCalendar
+        iconColor: gray
+        predefinedToolDefinitionId: calendarReturnOpenTimeSlots:1
+        schemaId: calendarReturnOpenTimeSlots
+        schemaVersion: 1
+        type: predefined
+        summary: ''
+      handlerTimeout: 10000
+      id: c7821843-dc94-4521-9a6b-205d0c1b1f0f
+      description: >-
+        Query one or more Google Calendars to find available time slots between
+        a given time range.
+    - draft: null
+      approvalRequired: false
+      params:
+        - name: email_address
+          description: >-
+            The calendar to create or query events on. Use "primary" to refer to
+            your main Google Calendar (recommended for most users). Only specify
+            an explicit email address if you need to access a different calendar
+            that you own or manage. Do not use the user email address unless
+            specifically asked. For personal scheduling, "primary" is typically
+            the correct value.
+          type: string
+          required: true
+        - name: event_id
+          description: The unique identifier of the event to delete.
+          type: string
+          required: true
+      handler:
+        type: function
+        functionId: f58f279c-5b93-4c05-a7ef-beb3856f7604
+      name: Delete Calendar Event
+      metadata:
+        iconName: ToolCalendar
+        iconColor: gray
+        predefinedToolDefinitionId: calendarDeleteEvent:1
+        schemaId: calendarDeleteEvent
+        schemaVersion: 1
+        type: predefined
+        summary: ''
+      handlerTimeout: 10000
+      id: e055d659-e9d5-4706-b731-6b333470564e
+      description: Delete an existing event from a user's Google Calendar.
+    - draft: null
+      approvalRequired: false
+      params:
+        - name: email_address
+          description: >-
+            The calendar to create or query events on. Use "primary" to refer to
+            your main Google Calendar (recommended for most users). Only specify
+            an explicit email address if you need to access a different calendar
+            that you own or manage. Do not use the user email address unless
+            specifically asked. For personal scheduling, "primary" is typically
+            the correct value.
+          type: string
+          required: true
+        - name: event_id
+          description: The unique identifier of the event to update.
+          type: string
+          required: true
+        - name: invitees
+          description: >-
+            Given a list of attendees with name, email, and optional flag,
+            return a JavaScript array of strings. Each string must be a valid,
+            compact JSON object representing a single attendee, with at least
+            the “email” field, and optionally “displayName” and “optional”. Do
+            not include extra formatting or wrap the output in an outer object
+            or string.
+          type: array
+          required: true
+          itemType: string
+      handler:
+        type: function
+        functionId: 36a8bbac-24f5-4e28-b69a-865f387be0c1
+      name: Invite to Calendar Event
+      metadata:
+        iconName: ToolCalendar
+        iconColor: '#4285F4'
+        predefinedToolDefinitionId: calendarInviteToEvent:1
+        schemaId: calendarInviteToEvent
+        schemaVersion: 1
+        type: predefined
+        summary: ''
+      handlerTimeout: 10000
+      id: acb633ee-4ce0-47f4-b0b6-cd010166333d
+      description: Add one or more attendees to an existing Google Calendar event.
+    - draft: null
+      approvalRequired: true
+      params:
+        - name: email_address
+          description: >-
+            The calendar to create or query events on. Use "primary" to refer to
+            your main Google Calendar (recommended for most users). Only specify
+            an explicit email address if you need to access a different calendar
+            that you own or manage. Do not use the user email address unless
+            specifically asked. For personal scheduling, "primary" is typically
+            the correct value.
+          type: string
+          required: true
+        - name: event_name
+          description: Updated short summary or title for the event.
+          type: string
+          required: false
+        - name: description
+          description: Updated detailed description of the event.
+          type: string
+          required: false
+        - name: location
+          description: Updated geographic location or address of the event.
+          type: string
+          required: false
+        - name: start_dateTime
+          description: Updated start date and time of the event in RFC3339 format.
+          type: string
+          required: false
+        - name: start_timeZone
+          description: >-
+            Updated time zone for the event start time (e.g.,
+            "America/New_York").
+          type: string
+          required: false
+        - name: end_dateTime
+          description: Updated end date and time of the event in RFC3339 format.
+          type: string
+          required: false
+        - name: end_timeZone
+          description: Updated time zone for the event end time (e.g., "America/New_York").
+          type: string
+          required: false
+        - name: event_id
+          description: The unique identifier of the event to update.
+          type: string
+          required: true
+      handler:
+        type: function
+        functionId: 78e977b9-31c2-42ba-beba-97f44204df28
+      name: Update Calendar Event
+      metadata:
+        iconName: ToolCalendar
+        iconColor: '#4285F4'
+        predefinedToolDefinitionId: calendarUpdateEvent:1
+        schemaId: calendarUpdateEvent
+        schemaVersion: 1
+        type: predefined
+        summary: ''
+      handlerTimeout: 10000
+      id: 5d39e71c-9014-439d-8681-39a3520cbac0
+      description: >-
+        Update an existing event on a user's Google Calendar. Any provided
+        values will fully replace the existing values for those fields.
+    - draft: null
+      approvalRequired: false
+      params:
+        - name: to
+          description: A comma-separated list of email addresses to send the email to.
+          type: string
+          required: true
+        - name: subject
+          description: A short string summarizing the purpose of the email.
+          type: string
+          required: true
+        - name: in_reply_to
+          description: The message-id that the email is being sent as a reply to.
+          type: string
+          required: true
+        - name: cc
+          description: >-
+            A comma-separated list of email addresses to send a carbon copy
+            (visible to all recipients).
+          type: string
+          required: false
+        - name: bcc
+          description: >-
+            A comma-separated list of email addresses to send a blind carbon
+            copy (hidden from other recipients).
+          type: string
+          required: false
+        - name: body
+          description: >-
+            The main content of the email, written in Markdown. Supports
+            formatting such as headings, bold text, lists, and links.
+          type: string
+          required: true
+        - name: attachment
+          description: >-
+            An array of files to attach, each with the structure: 
+
+            { data: “<base64_string>”, name: "<filename>", contentType:
+            "<mime/type>" }.
+          type: string
+          required: false
+      handler:
+        type: function
+        functionId: c0268ad2-5da6-4be0-970b-a50268a6f456
+      name: Reply to Email
+      metadata:
+        iconName: ToolEmail
+        iconColor: gray
+        predefinedToolDefinitionId: replyToEmail:1
+        schemaId: replyToEmail
+        schemaVersion: 1
+        type: predefined
+        summary: ''
+      handlerTimeout: 10000
+      id: 237b6d21-e723-44d1-8a2f-8e23aa0e4afc
+      description: Reply to an email using Retool Email
+    - draft: null
+      approvalRequired: false
+      params:
+        - name: file_id
+          description: The unique identifier of the file to retrieve.
+          type: string
+          required: true
+      handler:
+        type: function
+        functionId: 25bf514f-d3d5-4a5e-97b9-c75dcfd4a437
+      name: Get File Contents
+      metadata:
+        type: predefined
+        iconName: ToolStorage
+        iconColor: gray
+        predefinedToolDefinitionId: getFileContents:1
+        schemaId: getFileContents
+        schemaVersion: 1
+        summary: Retool Storage
+      handlerTimeout: 10000
+      id: 62693414-182d-4f71-9161-dd8e66af7abe
+      description: >-
+        Retrieve the contents of a file by its ID and return the data as a
+        Base64-encoded string.
+  changesetIsObject: false
+  providerName: openAI
+  enableCaching: false
+  allowedGroups: []
+  offlineQueryType: None
+  queryThrottleTime: '750'
+  updateSetValueDynamically: false
+  notificationDuration: ''
+style: {}
+createdAt: 2025-05-23T20:57:25.287Z
+blockData:
+  top: 48
+  left: 480
+  uuid: 1b1ded38-b4df-44b4-ad4f-fff4b991283f
+  pluginId: aiAgentExecute1
+  blockType: aiAgentExecute
+  editorType: JavascriptQuery
+  isMinimized: false
+  resourceName: RetoolAIAgentExecuteQuery
+  incomingPorts: []
+  incomingOnSuccessEdges:
+    - 57dd5313-3c8c-458e-ab65-8ed0b0ae688f

@@ -1,0 +1,100 @@
+id: query3
+type: datasource
+subtype: OpenAPIQuery
+resourceName: 93a5a318-4d69-493a-abb6-5d6e8dd37034
+resourceDisplayName: Amarvir Retool Slack
+template:
+  queryRefreshTime: ''
+  requestBodyMetadata: ''
+  method: post
+  allowedGroupIds: []
+  streamResponse: false
+  operationId: chat_postMessage
+  lastReceivedFromResourceAt: null
+  isFunction: false
+  functionParameters: null
+  queryDisabledMessage: ''
+  servedFromCache: false
+  server: ''
+  offlineUserQueryInputs: ''
+  functionDescription: null
+  successMessage: ''
+  queryDisabled: ''
+  path: /chat.postMessage
+  playgroundQuerySaveId: latest
+  workflowParams: null
+  resourceNameOverride: ''
+  runWhenModelUpdates: false
+  autoPaginate: false
+  workflowRunExecutionType: sync
+  showFailureToaster: true
+  query: ''
+  playgroundQueryUuid: ''
+  playgroundQueryId: null
+  error: null
+  workflowRunBodyType: raw
+  privateParams: []
+  queryRunOnSelectorUpdate: false
+  runWhenPageLoadsDelay: ''
+  parameters: '{"text":"{{ query8.data }}"}'
+  data: null
+  specPathOverride: ''
+  importedQueryInputs: {}
+  isImported: false
+  showSuccessToaster: true
+  cacheKeyTtl: ''
+  requestSentTimestamp: null
+  metadata: null
+  requestBodyDynamicStates: ''
+  queryRunTime: null
+  changesetObject: ''
+  requestBody: ''
+  offlineOptimisticResponse: null
+  errorTransformer: return data.error
+  specBasePath: ''
+  finished: null
+  confirmationMessage: null
+  isFetching: false
+  changeset: ''
+  rawData: null
+  queryTriggerDelay: '0'
+  resourceTypeOverride: slackopenapi
+  watchedParams: []
+  serverVariables: ''
+  enableErrorTransformer: false
+  autoPaginateLimit: 500
+  showLatestVersionUpdatedWarning: false
+  timestamp: 0
+  importedQueryDefaults: {}
+  enableTransformer: false
+  showUpdateSetValueDynamicallyToggle: true
+  parameterDynamicStates: >-
+    {"attachments":false,"blocks":false,"channel":false,"icon_emoji":false,"icon_url":false,"link_names":false,"mrkdwn":false,"parse":false,"reply_broadcast":false,"text":false,"thread_ts":false,"unfurl_links":false,"unfurl_media":false,"username":false}
+  parameterMetadata: ''
+  overrideOrgCacheForUserCache: false
+  runWhenPageLoads: false
+  transformer: return data
+  events: []
+  queryTimeout: '10000'
+  workflowId: null
+  requireConfirmation: false
+  queryFailureConditions: ''
+  changesetIsObject: false
+  enableCaching: false
+  allowedGroups: []
+  offlineQueryType: None
+  queryThrottleTime: '750'
+  updateSetValueDynamically: false
+  notificationDuration: ''
+createdAt: 2025-07-22T17:50:34.617Z
+blockData:
+  top: -224
+  left: 3392
+  uuid: 7f8f332c-f316-4203-8ac0-a7ed32cc0b1d
+  pluginId: query3
+  blockType: default
+  editorType: OpenAPIQuery
+  resourceName: 93a5a318-4d69-493a-abb6-5d6e8dd37034
+  incomingPorts: []
+  incomingOnSuccessEdges:
+    - 09f9dda9-8b9f-4013-808b-c6cff84ad11d

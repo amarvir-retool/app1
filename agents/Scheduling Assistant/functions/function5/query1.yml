@@ -1,0 +1,111 @@
+id: query1
+type: datasource
+subtype: OpenAPIQuery
+resourceName: 1c5b1ebc-21cb-4aa3-9ed1-1001b2498695
+resourceDisplayName: Amarvir's Calender
+template:
+  ordered:
+    - queryRefreshTime: ''
+    - method: patch
+    - allowedGroupIds:
+        array: []
+    - streamResponse: false
+    - operationId: calendar_events_patch
+    - lastReceivedFromResourceAt: null
+    - isFunction: false
+    - functionParameters: null
+    - queryDisabledMessage: ''
+    - servedFromCache: false
+    - server: ''
+    - offlineUserQueryInputs: ''
+    - functionDescription: null
+    - successMessage: ''
+    - queryDisabled: ''
+    - path: /calendars/{calendarId}/events/{eventId}
+    - playgroundQuerySaveId: latest
+    - workflowParams: null
+    - resourceNameOverride: ''
+    - runWhenModelUpdates: false
+    - autoPaginate: false
+    - workflowRunExecutionType: sync
+    - showFailureToaster: true
+    - query: ''
+    - playgroundQueryUuid: ''
+    - playgroundQueryId: null
+    - error: null
+    - workflowRunBodyType: raw
+    - privateParams:
+        array: []
+    - queryRunOnSelectorUpdate: false
+    - runWhenPageLoadsDelay: ''
+    - parameters: >-
+        {"eventId":"{{ params.event_id }}","calendarId":"{{ params.email_address
+        }}"}
+    - data: null
+    - specPathOverride: ''
+    - importedQueryInputs:
+        object: {}
+    - isImported: false
+    - showSuccessToaster: true
+    - cacheKeyTtl: ''
+    - requestSentTimestamp: null
+    - metadata: null
+    - requestBodyDynamicStates: >-
+        {"anyoneCanAddSelf":false,"attachments":false,"attendees":true,"attendeesOmitted":false,"colorId":false,"conferenceData":false,"created":false,"creator":false,"description":false,"end":false,"endTimeUnspecified":false,"etag":false,"eventType":false,"extendedProperties":false,"gadget":false,"guestsCanInviteOthers":false,"guestsCanModify":false,"guestsCanSeeOtherGuests":false,"hangoutLink":false,"htmlLink":false,"iCalUID":false,"id":false,"kind":false,"location":false,"locked":false,"organizer":false,"originalStartTime":false,"privateCopy":false,"recurrence":false,"recurringEventId":false,"reminders":false,"sequence":false,"source":false,"start":false,"status":false,"summary":false,"transparency":false,"updated":false,"visibility":false}
+    - queryRunTime: null
+    - changesetObject: ''
+    - requestBody: '{"attendees":"{{ combineAttendees.data}}"}'
+    - offlineOptimisticResponse: null
+    - errorTransformer: return data.error
+    - specBasePath: ''
+    - finished: null
+    - confirmationMessage: null
+    - isFetching: false
+    - changeset: ''
+    - rawData: null
+    - queryTriggerDelay: '0'
+    - resourceTypeOverride: null
+    - watchedParams:
+        array: []
+    - serverVariables: ''
+    - enableErrorTransformer: false
+    - autoPaginateLimit: 500
+    - showLatestVersionUpdatedWarning: false
+    - timestamp: 0
+    - evalType: script
+    - importedQueryDefaults:
+        object: {}
+    - enableTransformer: false
+    - showUpdateSetValueDynamicallyToggle: true
+    - parameterDynamicStates: >-
+        {"calendarId":false,"eventId":false,"alwaysIncludeEmail":false,"conferenceDataVersion":false,"maxAttendees":false,"sendNotifications":false,"sendUpdates":false,"supportsAttachments":false,"fields":false,"prettyPrint":false,"alt":false,"key":false,"oauth_token":false,"quotaUser":false,"userIp":false}
+    - overrideOrgCacheForUserCache: false
+    - runWhenPageLoads: false
+    - transformer: return data
+    - events:
+        array: []
+    - queryTimeout: '10000'
+    - workflowId: null
+    - requireConfirmation: false
+    - queryFailureConditions: ''
+    - changesetIsObject: false
+    - enableCaching: false
+    - allowedGroups:
+        array: []
+    - offlineQueryType: None
+    - queryThrottleTime: '750'
+    - updateSetValueDynamically: false
+    - notificationDuration: ''
+    - parameterMetadata: ''
+    - requestBodyMetadata: ''
+createdAt: 2025-05-01T19:04:06.586Z
+blockData:
+  top: 48
+  left: 1936
+  uuid: c33db525-039c-4ded-bcf4-7f9c722d9571
+  pluginId: query1
+  blockType: default
+  editorType: OpenAPIQuery
+  resourceName: 1c5b1ebc-21cb-4aa3-9ed1-1001b2498695
+  incomingOnSuccessEdges:
+    - fb7ec265-a321-4a28-abfe-d1c2f0f73dd5
