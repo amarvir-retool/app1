@@ -1,0 +1,106 @@
+id: itemsFormatter
+type: datasource
+subtype: JavascriptQuery
+resourceName: JavascriptQuery
+template:
+  ordered:
+    - queryRefreshTime: ''
+    - allowedGroupIds:
+        array: []
+    - streamResponse: false
+    - lastReceivedFromResourceAt: null
+    - isFunction: false
+    - functionParameters: null
+    - queryDisabledMessage: ''
+    - servedFromCache: false
+    - offlineUserQueryInputs: ''
+    - functionDescription: null
+    - successMessage: ''
+    - queryDisabled: ''
+    - playgroundQuerySaveId: latest
+    - workflowParams: null
+    - resourceNameOverride: ''
+    - runWhenModelUpdates: false
+    - workflowRunExecutionType: sync
+    - showFailureToaster: true
+    - query: |-
+        const emailString = params.email_addresses;
+
+        const items = emailString
+          .split(',')
+          .map(email => ({ id: email.trim() }));
+
+        return items
+    - playgroundQueryUuid: ''
+    - playgroundQueryId: null
+    - error: null
+    - workflowRunBodyType: raw
+    - privateParams:
+        array: []
+    - queryRunOnSelectorUpdate: false
+    - runWhenPageLoadsDelay: ''
+    - data: null
+    - importedQueryInputs:
+        object: {}
+    - _additionalScope:
+        array: []
+    - isImported: false
+    - showSuccessToaster: true
+    - cacheKeyTtl: ''
+    - requestSentTimestamp: null
+    - metadata: null
+    - queryRunTime: null
+    - changesetObject: ''
+    - offlineOptimisticResponse: null
+    - errorTransformer: return data.error
+    - finished: null
+    - confirmationMessage: null
+    - isFetching: false
+    - changeset: ''
+    - rawData: null
+    - queryTriggerDelay: '0'
+    - resourceTypeOverride: null
+    - watchedParams:
+        array: []
+    - enableErrorTransformer: false
+    - showLatestVersionUpdatedWarning: false
+    - timestamp: 0
+    - evalType: script
+    - importedQueryDefaults:
+        object: {}
+    - enableTransformer: false
+    - showUpdateSetValueDynamicallyToggle: true
+    - overrideOrgCacheForUserCache: false
+    - runWhenPageLoads: false
+    - transformer: return data
+    - events:
+        array: []
+    - queryTimeout: '10000'
+    - workflowId: null
+    - requireConfirmation: false
+    - queryFailureConditions: ''
+    - changesetIsObject: false
+    - enableCaching: false
+    - allowedGroups:
+        array: []
+    - offlineQueryType: None
+    - queryThrottleTime: '750'
+    - updateSetValueDynamically: false
+    - notificationDuration: ''
+createdAt: 2025-04-30T18:58:53.005Z
+blockData:
+  top: 48
+  left: 448
+  uuid: 2194562b-0052-4f51-a07f-a3bacafd5f6d
+  comment:
+    body: >-
+      Query one or more Google Calendars to find available time slots between a
+      given time range.
+    visible: true
+    pluginId: itemsFormatter-comment
+  pluginId: itemsFormatter
+  blockType: code
+  editorType: JavascriptQuery
+  resourceName: JavascriptQuery
+  incomingOnSuccessEdges:
+    - e58db069-2bb8-4fbb-9e0c-a4b2569fa276

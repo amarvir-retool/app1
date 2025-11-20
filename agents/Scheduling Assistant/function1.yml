@@ -1,0 +1,107 @@
+id: function1
+type: datasource
+subtype: RESTQuery
+resourceName: REST-WithoutResource
+template:
+  queryRefreshTime: ''
+  paginationLimit: ''
+  allowedGroupIds: []
+  streamResponse: false
+  body: ''
+  lastReceivedFromResourceAt: null
+  isFunction: false
+  functionParameters: null
+  queryDisabledMessage: ''
+  servedFromCache: false
+  offlineUserQueryInputs: ''
+  functionDescription: null
+  successMessage: ''
+  queryDisabled: ''
+  playgroundQuerySaveId: latest
+  workflowParams: null
+  resourceNameOverride: ''
+  runWhenModelUpdates: true
+  paginationPaginationField: ''
+  workflowRunExecutionType: sync
+  headers: ''
+  showFailureToaster: true
+  paginationEnabled: false
+  query: null
+  playgroundQueryUuid: ''
+  playgroundQueryId: null
+  error: null
+  workflowRunBodyType: raw
+  privateParams: []
+  queryRunOnSelectorUpdate: false
+  runWhenPageLoadsDelay: ''
+  data: null
+  importedQueryInputs: {}
+  isImported: false
+  showSuccessToaster: true
+  cacheKeyTtl: ''
+  requestSentTimestamp: null
+  cookies: ''
+  metadata: null
+  queryRunTime: null
+  changesetObject: ''
+  offlineOptimisticResponse: null
+  errorTransformer: return data.error
+  finished: null
+  confirmationMessage: null
+  isFetching: false
+  changeset: ''
+  rawData: null
+  queryTriggerDelay: '0'
+  resourceTypeOverride: null
+  watchedParams: []
+  enableErrorTransformer: false
+  showLatestVersionUpdatedWarning: false
+  paginationDataField: ''
+  timestamp: 0
+  importedQueryDefaults: {}
+  enableTransformer: false
+  showUpdateSetValueDynamicallyToggle: true
+  version: 2
+  overrideOrgCacheForUserCache: false
+  runWhenPageLoads: false
+  transformer: return data
+  events: []
+  queryTimeout: 10000
+  workflowId: null
+  requireConfirmation: false
+  type: GET
+  queryFailureConditions: ''
+  changesetIsObject: false
+  enableCaching: false
+  allowedGroups: []
+  bodyType: none
+  offlineQueryType: None
+  queryThrottleTime: '750'
+  updateSetValueDynamically: false
+  notificationDuration: ''
+style: {}
+createdAt: 2025-05-27T19:29:46.083Z
+blockData:
+  top: 40
+  left: 40
+  uuid: 2959b1ca-c633-4ee5-a14e-4e122410e94b
+  options:
+    subflowId: 9ac58c2f-806f-411b-8a16-4f0fe329b558
+    parameters:
+      - id: af6d1d9c-c277-48e0-b538-0f9418e75151
+        name: email_address
+        exampleValue: ''
+      - id: 0875f14e-8a94-4c1a-b88b-b1d25fe727ae
+        name: max_results
+        exampleValue: ''
+      - id: f339921b-e4df-47f4-91bc-bed11a12fce2
+        name: time_max
+        exampleValue: ''
+      - id: b0ba899b-8db0-4db3-9adb-e356b7e4c2b3
+        name: time_min
+        exampleValue: ''
+  pluginId: function1
+  blockType: function
+  editorType: RESTQuery
+  resourceName: REST-WithoutResource
+  incomingOnSuccessEdges: []
