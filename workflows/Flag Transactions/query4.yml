@@ -1,0 +1,99 @@
+id: query4
+type: datasource
+subtype: OpenAPIQuery
+resourceName: ''
+template:
+  queryRefreshTime: ''
+  requestBodyMetadata: ''
+  method: post
+  allowedGroupIds: []
+  streamResponse: false
+  operationId: chat_postMessage
+  lastReceivedFromResourceAt: null
+  isFunction: false
+  functionParameters: null
+  queryDisabledMessage: ''
+  servedFromCache: false
+  server: ''
+  offlineUserQueryInputs: ''
+  functionDescription: null
+  successMessage: ''
+  queryDisabled: ''
+  path: /chat.postMessage
+  playgroundQuerySaveId: latest
+  workflowParams: null
+  resourceNameOverride: ''
+  runWhenModelUpdates: false
+  autoPaginate: false
+  workflowRunExecutionType: sync
+  showFailureToaster: true
+  query: ''
+  playgroundQueryUuid: ''
+  playgroundQueryId: null
+  error: null
+  workflowRunBodyType: raw
+  privateParams: []
+  queryRunOnSelectorUpdate: false
+  runWhenPageLoadsDelay: ''
+  parameters: '{"text":"{{ query9.data }}"}'
+  data: null
+  specPathOverride: ''
+  importedQueryInputs: {}
+  isImported: false
+  showSuccessToaster: true
+  cacheKeyTtl: ''
+  requestSentTimestamp: null
+  metadata: null
+  requestBodyDynamicStates: ''
+  queryRunTime: null
+  changesetObject: ''
+  requestBody: ''
+  offlineOptimisticResponse: null
+  errorTransformer: return data.error
+  specBasePath: ''
+  finished: null
+  confirmationMessage: null
+  isFetching: false
+  changeset: ''
+  rawData: null
+  queryTriggerDelay: '0'
+  resourceTypeOverride: slackopenapi
+  watchedParams: []
+  serverVariables: ''
+  enableErrorTransformer: false
+  autoPaginateLimit: 500
+  showLatestVersionUpdatedWarning: false
+  timestamp: 0
+  importedQueryDefaults: {}
+  enableTransformer: false
+  showUpdateSetValueDynamicallyToggle: true
+  parameterDynamicStates: >-
+    {"attachments":false,"blocks":false,"channel":false,"icon_emoji":false,"icon_url":false,"link_names":false,"mrkdwn":false,"parse":false,"reply_broadcast":false,"text":false,"thread_ts":false,"unfurl_links":false,"unfurl_media":false,"username":false}
+  parameterMetadata: ''
+  overrideOrgCacheForUserCache: false
+  runWhenPageLoads: false
+  transformer: return data
+  events: []
+  queryTimeout: '10000'
+  workflowId: null
+  requireConfirmation: false
+  queryFailureConditions: ''
+  changesetIsObject: false
+  enableCaching: false
+  allowedGroups: []
+  offlineQueryType: None
+  queryThrottleTime: '750'
+  updateSetValueDynamically: false
+  notificationDuration: ''
+createdAt: 2025-07-22T17:50:48.420Z
+blockData:
+  top: 1440
+  left: 3440
+  uuid: 197a1838-0e4a-4c0c-9d61-59bfd6deda50
+  pluginId: query4
+  blockType: default
+  editorType: OpenAPIQuery
+  resourceName: ''
+  incomingPorts: []
+  incomingOnSuccessEdges:
+    - 359ab5f9-1113-4117-88ff-7b2a2ce1ed15
