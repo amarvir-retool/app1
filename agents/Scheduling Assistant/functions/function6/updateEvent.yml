@@ -1,0 +1,128 @@
+id: updateEvent
+type: datasource
+subtype: OpenAPIQuery
+resourceName: 1c5b1ebc-21cb-4aa3-9ed1-1001b2498695
+resourceDisplayName: Amarvir's Calender
+template:
+  ordered:
+    - queryRefreshTime: ''
+    - method: put
+    - allowedGroupIds:
+        array: []
+    - streamResponse: false
+    - operationId: calendar_events_update
+    - lastReceivedFromResourceAt: null
+    - isFunction: false
+    - functionParameters: null
+    - queryDisabledMessage: ''
+    - servedFromCache: false
+    - server: ''
+    - offlineUserQueryInputs: ''
+    - functionDescription: null
+    - successMessage: ''
+    - queryDisabled: ''
+    - path: /calendars/{calendarId}/events/{eventId}
+    - playgroundQuerySaveId: latest
+    - workflowParams: null
+    - resourceNameOverride: ''
+    - runWhenModelUpdates: false
+    - autoPaginate: false
+    - workflowRunExecutionType: sync
+    - showFailureToaster: true
+    - query: ''
+    - playgroundQueryUuid: ''
+    - playgroundQueryId: null
+    - error: null
+    - workflowRunBodyType: raw
+    - privateParams:
+        array: []
+    - queryRunOnSelectorUpdate: false
+    - runWhenPageLoadsDelay: ''
+    - parameters: >-
+        {"eventId":"{{ params.event_id}}","calendarId":"{{ params.email_address
+        }}"}
+    - data: null
+    - specPathOverride: ''
+    - importedQueryInputs:
+        object: {}
+    - isImported: false
+    - showSuccessToaster: true
+    - cacheKeyTtl: ''
+    - requestSentTimestamp: null
+    - metadata: null
+    - requestBodyDynamicStates: >-
+        {"anyoneCanAddSelf":false,"attachments":false,"attendees":true,"attendeesOmitted":false,"colorId":false,"conferenceData":false,"created":false,"creator":false,"description":false,"end":false,"endTimeUnspecified":false,"etag":false,"eventType":false,"extendedProperties":false,"gadget":false,"guestsCanInviteOthers":false,"guestsCanModify":false,"guestsCanSeeOtherGuests":false,"hangoutLink":false,"htmlLink":false,"iCalUID":false,"id":false,"kind":false,"location":false,"locked":false,"organizer":false,"originalStartTime":false,"privateCopy":false,"recurrence":false,"recurringEventId":false,"reminders":false,"sequence":false,"source":false,"start":false,"status":false,"summary":false,"transparency":false,"updated":false,"visibility":false}
+    - queryRunTime: null
+    - changesetObject: ''
+    - requestBody: >-
+        {"summary":"{{ params.event_name?.trim() ? params.event_name :
+        getEvent.data.summary }}","description":"{{ params.description?.trim() ?
+        params.description : getEvent.data.description }}","location":"{{
+        params.location?.trim() ? params.location : getEvent.data.location
+        }}","end":{"timeZone":"{{ params.end_timeZone?.trim() ?
+        params.end_timeZone : getEvent.data.end?.timeZone }}","dateTime":"{{
+        params.end_dateTime?.trim() ? params.end_dateTime :
+        getEvent.data.end?.dateTime }}"},"start":{"timeZone":"{{
+        params.start_timeZone?.trim() ? params.start_timeZone :
+        getEvent.data.start?.timeZone }}","dateTime":"{{
+        params.start_dateTime?.trim() ? params.start_dateTime :
+        getEvent.data.start?.dateTime }}"},"attendees":"{{
+        getEvent.data.attendees ?? [] }}"}
+    - offlineOptimisticResponse: null
+    - errorTransformer: return data.error
+    - specBasePath: ''
+    - finished: null
+    - confirmationMessage: null
+    - isFetching: false
+    - changeset: ''
+    - rawData: null
+    - queryTriggerDelay: '0'
+    - resourceTypeOverride: null
+    - watchedParams:
+        array: []
+    - serverVariables: ''
+    - enableErrorTransformer: false
+    - autoPaginateLimit: 500
+    - showLatestVersionUpdatedWarning: false
+    - timestamp: 0
+    - evalType: script
+    - importedQueryDefaults:
+        object: {}
+    - enableTransformer: false
+    - showUpdateSetValueDynamicallyToggle: true
+    - parameterDynamicStates: >-
+        {"calendarId":false,"eventId":false,"alwaysIncludeEmail":false,"conferenceDataVersion":false,"maxAttendees":false,"sendNotifications":false,"sendUpdates":false,"supportsAttachments":false,"fields":false,"prettyPrint":false,"alt":false,"key":false,"oauth_token":false,"quotaUser":false,"userIp":false}
+    - overrideOrgCacheForUserCache: false
+    - runWhenPageLoads: false
+    - transformer: return data
+    - events:
+        array: []
+    - queryTimeout: '10000'
+    - workflowId: null
+    - requireConfirmation: false
+    - queryFailureConditions: ''
+    - changesetIsObject: false
+    - enableCaching: false
+    - allowedGroups:
+        array: []
+    - offlineQueryType: None
+    - queryThrottleTime: '750'
+    - updateSetValueDynamically: false
+    - notificationDuration: ''
+    - parameterMetadata: ''
+    - requestBodyMetadata: '{}'
+createdAt: 2025-04-29T21:37:43.943Z
+blockData:
+  top: 48
+  left: 1392
+  uuid: cd76e9bc-1cc6-4174-9291-84ccf6c06911
+  comment:
+    body: ''
+    visible: false
+    pluginId: query1-comment
+  pluginId: updateEvent
+  blockType: default
+  editorType: OpenAPIQuery
+  resourceName: 1c5b1ebc-21cb-4aa3-9ed1-1001b2498695
+  incomingOnSuccessEdges:
+    - 0f9d5b4e-e96a-450d-bc44-e3f24ded5fc1

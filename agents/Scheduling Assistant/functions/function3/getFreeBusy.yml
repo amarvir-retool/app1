@@ -1,0 +1,112 @@
+id: getFreeBusy
+type: datasource
+subtype: OpenAPIQuery
+resourceName: 1c5b1ebc-21cb-4aa3-9ed1-1001b2498695
+resourceDisplayName: Amarvir's Calender
+template:
+  ordered:
+    - queryRefreshTime: ''
+    - method: post
+    - allowedGroupIds:
+        array: []
+    - streamResponse: false
+    - operationId: calendar_freebusy_query
+    - lastReceivedFromResourceAt: null
+    - isFunction: false
+    - functionParameters: null
+    - queryDisabledMessage: ''
+    - servedFromCache: false
+    - server: ''
+    - offlineUserQueryInputs: ''
+    - functionDescription: null
+    - successMessage: ''
+    - queryDisabled: ''
+    - path: /freeBusy
+    - playgroundQuerySaveId: latest
+    - workflowParams: null
+    - resourceNameOverride: ''
+    - runWhenModelUpdates: false
+    - autoPaginate: false
+    - workflowRunExecutionType: sync
+    - showFailureToaster: true
+    - query: ''
+    - playgroundQueryUuid: ''
+    - playgroundQueryId: null
+    - error: null
+    - workflowRunBodyType: raw
+    - privateParams:
+        array: []
+    - queryRunOnSelectorUpdate: false
+    - runWhenPageLoadsDelay: ''
+    - parameters: '{}'
+    - data: null
+    - specPathOverride: ''
+    - importedQueryInputs:
+        object: {}
+    - isImported: false
+    - showSuccessToaster: true
+    - cacheKeyTtl: ''
+    - requestSentTimestamp: null
+    - metadata: null
+    - requestBodyDynamicStates: >-
+        {"calendarExpansionMax":false,"groupExpansionMax":false,"items":true,"timeMax":false,"timeMin":false,"timeZone":false}
+    - queryRunTime: null
+    - changesetObject: ''
+    - requestBody: >-
+        {"items":"{{ itemsFormatter.data }}","timeMin":"{{ params.time_min
+        }}","timeMax":"{{ params.time_max }}","timeZone":"{{ params.time_zone
+        }}"}
+    - offlineOptimisticResponse: null
+    - errorTransformer: return data.error
+    - specBasePath: ''
+    - finished: null
+    - confirmationMessage: null
+    - isFetching: false
+    - changeset: ''
+    - rawData: null
+    - queryTriggerDelay: '0'
+    - resourceTypeOverride: null
+    - watchedParams:
+        array: []
+    - serverVariables: ''
+    - enableErrorTransformer: false
+    - autoPaginateLimit: 500
+    - showLatestVersionUpdatedWarning: false
+    - timestamp: 0
+    - evalType: script
+    - importedQueryDefaults:
+        object: {}
+    - enableTransformer: false
+    - showUpdateSetValueDynamicallyToggle: true
+    - parameterDynamicStates: >-
+        {"fields":false,"prettyPrint":false,"alt":false,"key":false,"oauth_token":false,"quotaUser":false,"userIp":false}
+    - overrideOrgCacheForUserCache: false
+    - runWhenPageLoads: false
+    - transformer: return data
+    - events:
+        array: []
+    - queryTimeout: '10000'
+    - workflowId: null
+    - requireConfirmation: false
+    - queryFailureConditions: ''
+    - changesetIsObject: false
+    - enableCaching: false
+    - allowedGroups:
+        array: []
+    - offlineQueryType: None
+    - queryThrottleTime: '750'
+    - updateSetValueDynamically: false
+    - notificationDuration: ''
+    - parameterMetadata: ''
+    - requestBodyMetadata: '{"items":[{}]}'
+createdAt: 2025-04-30T18:55:16.402Z
+blockData:
+  top: 48
+  left: 928
+  uuid: 5fb7c222-0779-4292-8c1b-36c48ec697a9
+  pluginId: getFreeBusy
+  blockType: default
+  editorType: OpenAPIQuery
+  resourceName: 1c5b1ebc-21cb-4aa3-9ed1-1001b2498695
+  incomingOnSuccessEdges:
+    - 2194562b-0052-4f51-a07f-a3bacafd5f6d
