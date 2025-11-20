@@ -45,7 +45,12 @@
         />
       </Header>
       <View id="00030" viewKey="View 1">
-        <Button id="button1" heightType="auto" text="New order">
+        <Button
+          id="button1"
+          heightType="auto"
+          hidden={'{{ !current_user?.groups?.includes("Manager") }}'}
+          text="New order"
+        >
           <Event
             event="click"
             method="show"
@@ -75,7 +80,6 @@
       placeholder="search"
       style={{}}
     />
-    <Button id="button17" text="Button" />
     <Include src="./selectedAssetDetails.rsx" />
     <Table
       id="assetsTable"
