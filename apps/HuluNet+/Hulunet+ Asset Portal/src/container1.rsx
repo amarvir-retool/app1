@@ -75,6 +75,7 @@
       placeholder="search"
       style={{}}
     />
+    <Button id="button17" text="Button" />
     <Include src="./selectedAssetDetails.rsx" />
     <Table
       id="assetsTable"

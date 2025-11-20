@@ -151,6 +151,22 @@
       }
     }
   },
+  "button17": {
+    "container": "container1",
+    "subcontainer": "00030",
+    "row": 1.2,
+    "col": 8,
+    "height": 1,
+    "width": 2,
+    "stackPosition": {
+      "object": {
+        "ordinal": 0,
+        "widthType": "fixed",
+        "width": 0,
+        "height": 0
+      }
+    }
+  },
   "container1": {
     "height": 3.8,
     "width": 6,
@@ -353,7 +369,7 @@
   "selectedAssetDetails": {
     "container": "container1",
     "subcontainer": "00030",
-    "row": 1,
+    "row": 2.2,
     "col": 8,
     "height": 0.2,
     "stackPosition": {
