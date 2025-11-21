@@ -1,1 +1,1 @@
-select * from asset_management_library
+select * from asset_management_library 

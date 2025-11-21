@@ -14,6 +14,7 @@
     />
   </Header>
   <View id="00030" viewKey="View 1">
+    <Button id="button17" text="Button" />
     <Select
       id="filterAssetsTable"
       data="{{ getAllAssets.data }}"
@@ -45,7 +46,7 @@
         />
       </Header>
       <View id="00030" viewKey="View 1">
-        <Button id="button1" heightType="auto" text="New order">
+        <Button id="button1" heightType="auto" hidden="" text="New order">
           <Event
             event="click"
             method="show"
@@ -109,6 +110,7 @@
       <Column
         id="b37cc"
         alignment="left"
+        editable={false}
         editableOptions={{ showStepper: true }}
         format="decimal"
         formatOptions={{ showSeparators: true, notation: "standard" }}
@@ -118,7 +120,7 @@
         label="ID"
         placeholder="Enter value"
         position="center"
-        size={100}
+        size={35.90625}
       />
       <Column
         id="636c8"
@@ -129,7 +131,7 @@
         label="Name"
         placeholder="Enter value"
         position="center"
-        size={224}
+        size={204.09375}
       />
       <Column
         id="8e51c"
@@ -142,7 +144,7 @@
         label="Media Type"
         placeholder="Select option"
         position="center"
-        size={188}
+        size={166.46875}
         summaryAggregationMode="none"
         valueOverride="{{ _.startCase(item) }}"
       />
@@ -156,7 +158,7 @@
         label="Description"
         placeholder="Enter value"
         position="center"
-        size={313}
+        size={466}
       />
       <Column
         id="04283"
@@ -169,7 +171,7 @@
         label="Language"
         placeholder="Select option"
         position="center"
-        size={162}
+        size={86.625}
         valueOverride="{{ _.startCase(item) }}"
       />
       <Column
@@ -183,7 +185,7 @@
         label="Country"
         placeholder="Select option"
         position="center"
-        size={151}
+        size={83.03125}
         valueOverride="{{ _.startCase(item) }}"
       />
       <Column
@@ -204,7 +206,7 @@
         label="Spend"
         placeholder="Enter value"
         position="center"
-        size={165.390625}
+        size={97.90625}
       />
       <Column
         id="741e6"
@@ -216,7 +218,7 @@
         key="media"
         label="Media"
         position="center"
-        size={100}
+        size={466}
       >
         <Event
           event="clickCell"
@@ -228,6 +230,20 @@
           waitType="debounce"
         />
       </Column>
+      <Column
+        id="65a48"
+        alignment="left"
+        format="tag"
+        formatOptions={{ automaticColors: true }}
+        groupAggregationMode="none"
+        key="owner"
+        label="Owner"
+        placeholder="Select option"
+        position="center"
+        size={100}
+        summaryAggregationMode="none"
+        valueOverride="{{ _.startCase(item) }}"
+      />
       <ToolbarButton
         id="1a"
         icon="bold/interface-text-formatting-filter-2"
