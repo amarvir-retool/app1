@@ -75,6 +75,7 @@
       placeholder="search"
       style={{}}
     />
+    <Button id="button17" text="Approve order" />
     <Include src="./selectedAssetDetails.rsx" />
     <Table
       id="assetsTable"
